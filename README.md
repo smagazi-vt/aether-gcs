@@ -5,9 +5,11 @@ The Aether project is a sophisticated system for commanding and controlling a fl
 ## 1. The Drones: The Autonomous Agents
 Each drone in the fleet is an independent, intelligent robot. It has two "brains" working together:
 
-### The Pilot (The Flight Controller): This is the Pixhawk hardware running the PX4 firmware. Its only job is to handle the physics of flight—keeping the drone stable, managing the motors, and executing low-level commands like "fly to this coordinate." It's the expert pilot focused on the immediate task of flying.
+### The Pilot (The Flight Controller): 
+This is the Pixhawk hardware running the PX4 firmware. Its only job is to handle the physics of flight—keeping the drone stable, managing the motors, and executing low-level commands like "fly to this coordinate." It's the expert pilot focused on the immediate task of flying.
 
-### The Mission Specialist (The Companion Computer): This is the Raspberry Pi. It's the high-level brain that understands the overall mission. It runs the ROS 2 software that handles:
+### The Mission Specialist (The Companion Computer): 
+This is the Raspberry Pi. It's the high-level brain that understands the overall mission. It runs the ROS 2 software that handles:
 
 #### Communication: Talking to the GCS and other drones over the network.
 
