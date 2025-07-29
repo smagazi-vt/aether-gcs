@@ -1,4 +1,5 @@
 # Aether GCS: A High-Level Overview
+
 The Aether project is a sophisticated system for commanding and controlling a fleet of autonomous drones. Instead of a simple remote control for one drone, it's a complete command center for a team of robotic vehicles. The entire system is built on a professional, distributed architecture, which can be broken down into three core components: The Drones, The Ground Control Station, and The Network.
 
 ## 1. The Drones: The Autonomous Agents
