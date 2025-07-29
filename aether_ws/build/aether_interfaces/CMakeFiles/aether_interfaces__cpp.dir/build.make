@@ -71,6 +71,16 @@ CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/de
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__struct.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__traits.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__type_support.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/drone_state.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__builder.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__struct.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__traits.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__type_support.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/fleet_state.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__builder.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__struct.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__traits.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -89,8 +99,10 @@ rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/s
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/srv/UploadMission.idl
+rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/DroneState.idl
+rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/FleetState.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/home/valtec/aether/.venv/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__builder.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__builder.hpp
@@ -104,7 +116,47 @@ rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__traits.hpp: ro
 rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__type_support.hpp
 
+rosidl_generator_cpp/aether_interfaces/msg/drone_state.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/drone_state.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__builder.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__builder.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__struct.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__struct.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__traits.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__traits.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__type_support.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/fleet_state.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/fleet_state.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__builder.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__builder.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__struct.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__struct.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__traits.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__traits.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp
+
 aether_interfaces__cpp: CMakeFiles/aether_interfaces__cpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__builder.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__struct.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__traits.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__type_support.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__builder.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__struct.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__traits.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/drone_state.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/fleet_state.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__builder.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__struct.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__traits.hpp

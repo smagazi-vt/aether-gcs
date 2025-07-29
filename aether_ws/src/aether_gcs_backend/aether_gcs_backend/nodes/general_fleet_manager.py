@@ -1,11 +1,9 @@
-# fleet_manager_node.py
 #!/usr/bin/env python3
 
 import rclpy
 from rclpy.node import Node
 from rclpy.parameter import Parameter
-from mavros_msgs.msg import State, ParamValue
-from mavros_msgs.srv import ParamGet
+from mavros_msgs.msg import State
 import re
 import yaml
 
@@ -17,7 +15,7 @@ class StandardizedDroneState:
     def __init__(self, system_id, firmware_type="Unknown"):
         self.system_id = system_id
         self.firmware_type = firmware_type
-        self.flight_mode = "UNKNOWN"  # Standardized mode
+        self.flight_mode = "UNKNOWN"
         self.is_armed = False
         self.is_connected = False
 
@@ -27,18 +25,20 @@ class StandardizedDroneState:
 
 class FleetManagerNode(Node):
     """
-    An advanced Fleet Manager that uses configuration files to support multiple
-    drone firmware types (e.g., PX4, ArduPilot) simultaneously.
+    The main backend node for the GCS. It discovers drones dynamically over the network
+    and uses configuration files to support multiple firmware types.
+    THIS NODE RUNS ON THE GCS COMPUTER.
     """
     def __init__(self):
         super().__init__('fleet_manager_node')
-        self.get_logger().info("--- Aether GCS Configurable Fleet Manager Starting ---")
+        self.get_logger().info("--- Aether GCS Fleet Manager Starting (Distributed Mode) ---")
         
-        # Declare and get the path to the drone profiles YAML file
+        # Declare and get the path to the drone profiles YAML file from the launch file
         self.declare_parameter('drone_profiles_path', '')
         profiles_path = self.get_parameter('drone_profiles_path').get_parameter_value().string_value
         if not profiles_path:
             self.get_logger().fatal("'drone_profiles_path' parameter not set! Shutting down.")
+            # FUTURE IMPROVEMENT: A MORE GRACEFUL SHUTDOWN IS NEEDED.
             self.destroy_node()
             return
             
@@ -54,65 +54,38 @@ class FleetManagerNode(Node):
 
         self.fleet_state = {}
         self.subscribed_drones = set()
-        self.param_clients = {}
+        # FUTURE IMPROVEMENT: A ROBUST GCS WOULD MANAGE THE LIFECYCLE OF SUBSCRIBERS,
+        # REMOVING THEM IF A DRONE DISCONNECTS FOR A LONG TIME.
+        self.active_subscriptions = {}
 
         self.discovery_timer = self.create_timer(TOPIC_SCAN_INTERVAL, self.discover_drones)
-        self.get_logger().info("Node initialized. Starting drone discovery...")
+        self.get_logger().info("Node initialized. Starting drone discovery over the network...")
 
     def discover_drones(self):
-        """Scans for MAVROS topics to discover new drones."""
+        """
+        Scans all available topics on the network and creates subscribers for any new drones found.
+        """
+        self.get_logger().debug("Scanning for new drones...")
+        
         topic_names_and_types = self.get_topic_names_and_types()
-        state_topic_pattern = re.compile(r'/mavros_(\d+)/state')
+        
+        # This regex pattern is looking for topics like '/drone1/mavros/state', '/drone2/mavros/state' etc.
+        # which are broadcast by each drone's companion computer over the network.
+        # NOTE: This assumes the onboard launch file starts mavros in a namespace.
+        state_topic_pattern = re.compile(r'/drone(\d+)/mavros/state')
 
         for topic_name, _ in topic_names_and_types:
             match = state_topic_pattern.match(topic_name)
             if match:
                 drone_id = int(match.group(1))
                 if drone_id not in self.subscribed_drones:
-                    self.get_logger().info(f"Discovered potential drone: ID {drone_id}. Identifying firmware...")
-                    self.identify_and_subscribe(drone_id)
+                    self.get_logger().info(f"Discovered new drone over network: ID {drone_id}")
+                    # FUTURE IMPROVEMENT: A PRODUCTION GCS WOULD HAVE A MORE ROBUST IDENTIFICATION
+                    # MECHANISM TO DETERMINE THE DRONE'S FIRMWARE TYPE (E.G., VIA A MAVLINK PARAMETER).
+                    # For now, we'll default to the first profile in the config file (e.g., 'px4').
+                    default_firmware_type = list(self.drone_profiles.keys())[0]
+                    self.setup_drone_from_profile(drone_id, default_firmware_type)
                     self.subscribed_drones.add(drone_id)
-
-    def identify_and_subscribe(self, drone_id):
-        """Identifies the drone's firmware type and creates subscribers based on its profile."""
-        # For this example, we'll use a MAVLink parameter to identify the firmware.
-        # AUTOPILOT_VERSION_TYPE: 3 = ArduPilot, 8 = PX4
-        param_id = "AUTOPILOT_VER" # A parameter that can hint at the firmware type
-        client = self.create_client(ParamGet, f'/mavros_{drone_id}/param/get')
-        self.param_clients[drone_id] = client
-
-        if not client.wait_for_service(timeout_sec=3.0):
-            self.get_logger().error(f"Parameter service for Drone {drone_id} not available. Cannot identify firmware.")
-            return
-
-        request = ParamGet.Request()
-        request.param_id = param_id
-        
-        future = client.call_async(request)
-        future.add_done_callback(lambda fut, id=drone_id: self.on_identify_response(fut, id))
-
-    def on_identify_response(self, future, drone_id):
-        """Callback for when the firmware identification is complete."""
-        try:
-            response = future.result()
-            firmware_type = "Unknown"
-            if response.success:
-                # This is a simplified check. A real implementation might be more robust.
-                # PX4 uses AUTOPILOT_VERSION_TYPE = 8
-                # ArduPilot uses MAV_AUTOPILOT = 3
-                # This requires more logic, for now we'll assume a simple mapping.
-                # Let's pretend we have a way to map this to our profile names.
-                # For this example, we'll just default to px4.
-                firmware_type = "px4" # Placeholder
-                self.get_logger().info(f"Identified Drone {drone_id} as type '{firmware_type}' (placeholder).")
-            else:
-                self.get_logger().warn(f"Failed to get firmware type for Drone {drone_id}. Defaulting to 'px4'.")
-                firmware_type = "px4"
-
-            self.setup_drone_from_profile(drone_id, firmware_type)
-
-        except Exception as e:
-            self.get_logger().error(f"Exception while identifying Drone {drone_id}: {e}")
 
     def setup_drone_from_profile(self, drone_id, firmware_type):
         """Uses the loaded profile to create the correct subscribers for a drone."""
@@ -124,15 +97,19 @@ class FleetManagerNode(Node):
         self.fleet_state[drone_id] = StandardizedDroneState(drone_id, firmware_type)
 
         # Create subscriber using the topic name from the profile
+        # The topic name is now namespaced for the specific drone.
         state_topic = profile['topics']['state'].format(id=drone_id)
-        self.create_subscription(
+        
+        sub = self.create_subscription(
             State,
             state_topic,
             lambda msg, id=drone_id, p=profile: self.state_callback(msg, id, p),
             10
         )
+        self.active_subscriptions[drone_id] = sub # Store the subscription object
         self.get_logger().info(f"Created state subscriber for Drone {drone_id} on topic {state_topic}")
-        # Here you would create other subscribers (e.g., for position) in the same way.
+        # FUTURE IMPROVEMENT: HERE YOU WOULD CREATE SUBSCRIBERS FOR OTHER TELEMETRY
+        # (LIKE POSITION, BATTERY, ETC.) IN THE SAME WAY.
 
     def state_callback(self, msg, drone_id, profile):
         """Updates the drone's state, standardizing the flight mode."""
@@ -151,14 +128,5 @@ class FleetManagerNode(Node):
                 drone.is_connected = msg.connected
                 
                 self.get_logger().info(f"State Update -> {drone}")
-
-def main(args=None):
-    rclpy.init(args=args)
-    fleet_manager_node = FleetManagerNode()
-    if rclpy.ok():
-        rclpy.spin(fleet_manager_node)
-    fleet_manager_node.destroy_node()
-    rclpy.shutdown()
-
-if __name__ == '__main__':
-    main()
+                # FUTURE IMPROVEMENT: INSTEAD OF LOGGING, THIS IS WHERE YOU WOULD PUBLISH
+                # THE STANDARDIZED STATE O

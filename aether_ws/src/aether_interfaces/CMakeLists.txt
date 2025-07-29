@@ -8,24 +8,23 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
 
-# This is the command that generates your custom service code.
-# It MUST be placed before the ament_package() command.
+# --- THIS IS THE CRITICAL FIX ---
+# We must explicitly find the std_msgs package so that CMake knows where
+# to find the header files (like header__struct.h) that our custom
+# FleetState.msg depends on.
+find_package(std_msgs REQUIRED)
+
+# This is the command that generates your custom service and message code.
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UploadMission.srv"
+  "msg/DroneState.msg"
+  "msg/FleetState.msg"
 )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()

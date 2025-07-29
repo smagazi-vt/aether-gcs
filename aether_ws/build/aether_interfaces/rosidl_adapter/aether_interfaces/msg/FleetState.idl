@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from aether_interfaces/msg/FleetState.msg
+// generated code does not contain a copyright notice
+
+#include "aether_interfaces/msg/DroneState.idl"
+#include "std_msgs/msg/Header.idl"
+
+module aether_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Represents the state of the entire fleet." "\n"
+      "It contains a list of DroneState messages.")
+    struct FleetState {
+      std_msgs::msg::Header header;
+
+      sequence<aether_interfaces::msg::DroneState> drones;
+    };
+  };
+};

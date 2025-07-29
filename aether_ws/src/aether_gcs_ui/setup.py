@@ -13,14 +13,16 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='valtec',
-    maintainer_email='valtec@todo.todo',
+    maintainer='Valtec - Sara Magaziotis-Ginori',
+    maintainer_email='sara.magaziotisginori@valtec.ai',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='NONE',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ui = aether_gcs_ui.ui_node.py:main',
+            'aether_ui = aether_gcs_ui.main_window_node:main',
         ],
     },
 )
+
+

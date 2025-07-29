@@ -3,7 +3,9 @@
   "output_dir": "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_cpp/aether_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/UploadMission.idl"
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/UploadMission.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/DroneState.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/FleetState.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -21,6 +23,8 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/srv/UploadMission.idl"
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/srv/UploadMission.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/msg/DroneState.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/msg/FleetState.idl"
   ]
 }

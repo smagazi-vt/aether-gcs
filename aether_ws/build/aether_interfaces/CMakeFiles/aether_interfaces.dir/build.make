@@ -69,6 +69,8 @@ include CMakeFiles/aether_interfaces.dir/progress.make
 CMakeFiles/aether_interfaces: /home/valtec/aether/aether_ws/src/aether_interfaces/srv/UploadMission.srv
 CMakeFiles/aether_interfaces: rosidl_cmake/srv/UploadMission_Request.msg
 CMakeFiles/aether_interfaces: rosidl_cmake/srv/UploadMission_Response.msg
+CMakeFiles/aether_interfaces: /home/valtec/aether/aether_ws/src/aether_interfaces/msg/DroneState.msg
+CMakeFiles/aether_interfaces: /home/valtec/aether/aether_ws/src/aether_interfaces/msg/FleetState.msg
 
 aether_interfaces: CMakeFiles/aether_interfaces
 aether_interfaces: CMakeFiles/aether_interfaces.dir/build.make

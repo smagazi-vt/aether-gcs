@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: aether-gcs-backend
 Version: 0.0.0
-Summary: TODO: Package description
+Summary: Contains node for receiving mission plans and node for dynamically discovering new drones.
 Home-page: UNKNOWN
-Maintainer: valtec
-Maintainer-email: valtec@todo.todo
-License: TODO: License declaration
+Maintainer: Valtec - Sara Magaziotis-Ginori
+Maintainer-email: sara.magaziotisginori@valtec.ai
+License: NONE
 Platform: UNKNOWN
 
 UNKNOWN

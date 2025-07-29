@@ -1,0 +1,24 @@
+running egg_info
+creating ../../build/aether_gcs_backend/aether_gcs_backend.egg-info
+writing ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/PKG-INFO
+writing dependency_links to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/dependency_links.txt
+writing entry points to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/entry_points.txt
+writing requirements to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/requires.txt
+writing top-level names to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/top_level.txt
+writing manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+reading manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+writing manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index
+creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index/resource_index
+creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index/resource_index/packages
+copying resource/aether_gcs_backend -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index/resource_index/packages
+copying package.xml -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend
+running install_egg_info
+Copying ../../build/aether_gcs_backend/aether_gcs_backend.egg-info to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.0-py3.10.egg-info
+running install_scripts
+Installing fleet_manager script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+Installing mission_planner script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+writing list of installed files to '/home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log'

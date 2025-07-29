@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='valtec',
-    maintainer_email='valtec@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Valtec - Sara Magaziotis-Ginori',
+    maintainer_email='sara.magaziotisginori@valtec.ai',
+    description='Contains node for receiving mission plans and node for dynamically discovering new drones.',
+    license='NONE',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

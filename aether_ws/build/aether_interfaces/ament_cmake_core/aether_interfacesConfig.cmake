@@ -16,7 +16,7 @@ set(_aether_interfaces_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT aether_interfaces_FIND_QUIETLY)
-  message(STATUS "Found aether_interfaces: 0.0.0 (${aether_interfaces_DIR})")
+  message(STATUS "Found aether_interfaces: 0.0.1 (${aether_interfaces_DIR})")
 endif()
 
 # warn when using a deprecated package

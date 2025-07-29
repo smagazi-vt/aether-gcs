@@ -1,3 +1,7 @@
+msg/DroneState.idl
+msg/DroneState.msg
+msg/FleetState.idl
+msg/FleetState.msg
 srv/UploadMission.idl
 srv/UploadMission.srv
 srv/UploadMission_Request.msg

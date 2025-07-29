@@ -3,7 +3,9 @@
   "output_dir": "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_fastrtps_c/aether_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/UploadMission.idl"
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/UploadMission.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/DroneState.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/FleetState.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
@@ -14,6 +16,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
-    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/srv/UploadMission.idl"
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/srv/UploadMission.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/msg/DroneState.idl",
+    "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/msg/FleetState.idl"
   ]
 }

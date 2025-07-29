@@ -1,8 +1,16 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.cpp.o"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.cpp.o.d"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.cpp.o"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.cpp.o.d"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.o"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.o.d"
   "libaether_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
   "libaether_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/drone_state__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/fleet_state__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_cpp.hpp"
 )

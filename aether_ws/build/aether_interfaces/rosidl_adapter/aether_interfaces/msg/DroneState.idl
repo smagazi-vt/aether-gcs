@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from aether_interfaces/msg/DroneState.msg
+// generated code does not contain a copyright notice
+
+
+module aether_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Represents the standardized state of a single drone in the fleet.")
+    struct DroneState {
+      uint8 system_id;
+
+      string firmware_type;
+
+      string flight_mode;
+
+      boolean is_armed;
+
+      boolean is_connected;
+    };
+  };
+};
