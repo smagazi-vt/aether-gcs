@@ -1,0 +1,4 @@
+[console_scripts]
+fleet_manager = aether_gcs_backend.fleet_manager_node:main
+mission_planner = aether_gcs_backend.mission_planner_node:main
+

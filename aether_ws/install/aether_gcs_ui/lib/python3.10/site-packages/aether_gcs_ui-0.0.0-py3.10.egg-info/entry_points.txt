@@ -1,0 +1,3 @@
+[console_scripts]
+ui = aether_gcs_ui.ui_node.py:main
+

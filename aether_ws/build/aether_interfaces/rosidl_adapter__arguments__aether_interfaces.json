@@ -1,0 +1,6 @@
+{
+  "package_name": "aether_interfaces",
+  "non_idl_tuples": [
+    "/home/valtec/aether/aether_ws/src/aether_interfaces:srv/UploadMission.srv"
+  ]
+}

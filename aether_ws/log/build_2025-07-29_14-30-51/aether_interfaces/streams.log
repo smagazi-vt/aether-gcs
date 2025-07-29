@@ -1,0 +1,63 @@
+[0.253s] Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_interfaces -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_interfaces
+[0.263s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.338s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.339s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.340s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.356s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.524s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.654s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.811s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.831s] -- Found PythonInterp: /home/valtec/aether/.venv/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.834s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.854s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.854s] -- Using PYTHON_EXECUTABLE: /home/valtec/aether/.venv/bin/python3
+[0.854s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.854s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.867s] -- Found PythonExtra: .so  
+[0.891s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.900s] -- Added test 'lint_cmake' to check CMake code style
+[0.901s] -- Added test 'xmllint' to check XML markup files
+[0.902s] -- Configuring done
+[0.915s] -- Generating done
+[0.920s] -- Build files have been written to: /home/valtec/aether/aether_ws/build/aether_interfaces
+[0.923s] Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_interfaces -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_interfaces
+[0.924s] Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+[0.953s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.959s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.967s] [  6%] Built target ament_cmake_python_copy_aether_interfaces
+[0.982s] Traceback (most recent call last):
+[0.982s]   File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>
+[0.982s]     from rosidl_generator_c import generate_c
+[0.982s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py", line 15, in <module>
+[0.982s]     from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+[0.982s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[0.982s]     from rosidl_parser.parser import parse_idl_file
+[0.982s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+[0.982s]     from lark import Lark
+[0.982s] ModuleNotFoundError: No module named 'lark'
+[0.986s] gmake[2]: *** [CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make:87: rosidl_generator_c/aether_interfaces/srv/upload_mission.h] Error 1
+[0.986s] gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/aether_interfaces__rosidl_generator_c.dir/all] Error 2
+[0.986s] gmake[1]: *** Waiting for unfinished jobs....
+[0.986s] Traceback (most recent call last):
+[0.986s]   File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>
+[0.986s]     from rosidl_generator_cpp import generate_cpp
+[0.986s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>
+[0.986s]     from rosidl_cmake import generate_files
+[0.986s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 24, in <module>
+[0.986s]     from rosidl_parser.parser import parse_idl_file
+[0.986s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 20, in <module>
+[0.986s]     from lark import Lark
+[0.986s] ModuleNotFoundError: No module named 'lark'
+[0.990s] gmake[2]: *** [CMakeFiles/aether_interfaces__cpp.dir/build.make:93: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp] Error 1
+[0.990s] gmake[1]: *** [CMakeFiles/Makefile2:317: CMakeFiles/aether_interfaces__cpp.dir/all] Error 2
+[1.068s] running egg_info
+[1.068s] creating aether_interfaces.egg-info
+[1.069s] writing aether_interfaces.egg-info/PKG-INFO
+[1.069s] writing dependency_links to aether_interfaces.egg-info/dependency_links.txt
+[1.069s] writing top-level names to aether_interfaces.egg-info/top_level.txt
+[1.069s] writing manifest file 'aether_interfaces.egg-info/SOURCES.txt'
+[1.069s] reading manifest file 'aether_interfaces.egg-info/SOURCES.txt'
+[1.069s] writing manifest file 'aether_interfaces.egg-info/SOURCES.txt'
+[1.085s] [  6%] Built target ament_cmake_python_build_aether_interfaces_egg
+[1.086s] gmake: *** [Makefile:146: all] Error 2
+[1.087s] Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20

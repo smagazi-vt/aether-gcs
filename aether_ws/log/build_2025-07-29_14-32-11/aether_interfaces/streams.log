@@ -1,0 +1,196 @@
+[0.256s] Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+[0.286s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.289s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.300s] [  6%] Built target ament_cmake_python_copy_aether_interfaces
+[0.433s] running egg_info
+[0.434s] writing aether_interfaces.egg-info/PKG-INFO
+[0.434s] writing dependency_links to aether_interfaces.egg-info/dependency_links.txt
+[0.434s] writing top-level names to aether_interfaces.egg-info/top_level.txt
+[0.435s] reading manifest file 'aether_interfaces.egg-info/SOURCES.txt'
+[0.435s] writing manifest file 'aether_interfaces.egg-info/SOURCES.txt'
+[0.450s] [  6%] Built target aether_interfaces__cpp
+[0.452s] [  6%] Built target ament_cmake_python_build_aether_interfaces_egg
+[0.454s] [  9%] [32mBuilding C object CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.c.o[0m
+[0.456s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.458s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.458s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.493s] [ 22%] [32m[1mLinking C shared library libaether_interfaces__rosidl_generator_c.so[0m
+[0.522s] [ 22%] Built target aether_interfaces__rosidl_generator_c
+[0.530s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.530s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.530s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.621s] [ 35%] [32mBuilding CXX object CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.o[0m
+[0.623s] [ 38%] [32mBuilding CXX object CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.cpp.o[0m
+[0.632s] [ 41%] [32mBuilding CXX object CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.cpp.o[0m
+[0.709s] [ 45%] [32mBuilding C object CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.c.o[0m
+[0.717s] [ 48%] [32mBuilding CXX object CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.o[0m
+[0.719s] [ 51%] [32mBuilding CXX object CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.cpp.o[0m
+[0.729s] [ 54%] [32m[1mLinking C shared library libaether_interfaces__rosidl_typesupport_introspection_c.so[0m
+[0.745s] [ 58%] [32m[1mLinking CXX shared library libaether_interfaces__rosidl_typesupport_c.so[0m
+[0.748s] [ 58%] Built target aether_interfaces__rosidl_typesupport_introspection_c
+[0.772s] [ 58%] Built target aether_interfaces__rosidl_typesupport_c
+[0.776s] [ 61%] [32m[1mLinking CXX shared library libaether_interfaces__rosidl_typesupport_cpp.so[0m
+[0.805s] [ 61%] Built target aether_interfaces__rosidl_typesupport_cpp
+[0.825s] [ 67%] [32m[1mLinking CXX shared library libaether_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[0.825s] [ 67%] [32m[1mLinking CXX shared library libaether_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.864s] [ 67%] Built target aether_interfaces__rosidl_typesupport_introspection_cpp
+[0.868s] [ 67%] Built target aether_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.900s] [ 70%] [32m[1mLinking CXX shared library libaether_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[0.944s] [ 70%] Built target aether_interfaces__rosidl_typesupport_fastrtps_c
+[0.957s] [ 70%] Built target aether_interfaces
+[0.978s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.193s] [ 74%] Built target aether_interfaces__py
+[1.209s] [ 77%] [32mBuilding C object CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c.o[0m
+[1.296s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so[0m
+[1.333s] [ 80%] Built target aether_interfaces__rosidl_generator_py
+[1.356s] [ 83%] [32mBuilding C object CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.357s] [ 87%] [32mBuilding C object CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.358s] [ 90%] [32mBuilding C object CMakeFiles/aether_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[1.417s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/aether_interfaces/aether_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.418s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aether_interfaces/aether_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.418s] [100%] [32m[1mLinking C shared library rosidl_generator_py/aether_interfaces/aether_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.438s] [100%] Built target aether_interfaces__rosidl_typesupport_c__pyext
+[1.441s] [100%] Built target aether_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.443s] [100%] Built target aether_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.451s] Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+[1.452s] Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces
+[1.457s] -- Install configuration: ""
+[1.457s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/ament_index/resource_index/rosidl_interfaces/aether_interfaces
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/upload_mission.h
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__struct.h
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__functions.c
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__type_support.h
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__functions.h
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/library_path.sh
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/library_path.dsv
+[1.458s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_generator_c.so
+[1.458s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_generator_c.so" to ""
+[1.458s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.459s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__type_support.c
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_introspection_c.h
+[1.459s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_introspection_c.so
+[1.459s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[1.459s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_c.so
+[1.459s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_c.so" to ""
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__type_support.hpp
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__traits.hpp
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__builder.hpp
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__struct.hpp
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/upload_mission.hpp
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/dds_fastrtps
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_cpp.hpp
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.460s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.460s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces
+[1.460s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv
+[1.461s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__type_support.cpp
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/include/aether_interfaces/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_introspection_cpp.hpp
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.461s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_cpp.so
+[1.461s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_typesupport_cpp.so" to ""
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/pythonpath.sh
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/pythonpath.dsv
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces-0.0.0-py3.10.egg-info
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv/_upload_mission_s.c
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv/__init__.py
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv/_upload_mission.py
+[1.461s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.462s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/libaether_interfaces__rosidl_generator_py.so
+[1.462s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.462s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/__init__.py
+[1.462s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.462s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_c.c
+[1.462s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.481s] Listing '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces'...
+[1.481s] Compiling '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/__init__.py'...
+[1.481s] Listing '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv'...
+[1.481s] Compiling '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv/__init__.py'...
+[1.481s] Compiling '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/srv/_upload_mission.py'...
+[1.483s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.483s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.484s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.484s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages/aether_interfaces/aether_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_generator_py.so
+[1.484s] -- Set runtime path of "/home/valtec/aether/aether_ws/install/aether_interfaces/lib/libaether_interfaces__rosidl_generator_py.so" to ""
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/srv/UploadMission.idl
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/srv/UploadMission.srv
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/srv/UploadMission_Request.msg
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/srv/UploadMission_Response.msg
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/ament_index/resource_index/package_run_dependencies/aether_interfaces
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/ament_index/resource_index/parent_prefix_path/aether_interfaces
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/ament_prefix_path.sh
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/ament_prefix_path.dsv
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/path.sh
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/environment/path.dsv
+[1.484s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/local_setup.bash
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/local_setup.sh
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/local_setup.zsh
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/local_setup.dsv
+[1.485s] -- Up-to-date: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.dsv
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/ament_index/resource_index/packages/aether_interfaces
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_generator_cExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_cExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_generator_cppExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.485s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_cppExport.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_generator_pyExport.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/export_aether_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfacesConfig.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake/aether_interfacesConfig-version.cmake
+[1.486s] -- Installing: /home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.xml
+[1.488s] Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces

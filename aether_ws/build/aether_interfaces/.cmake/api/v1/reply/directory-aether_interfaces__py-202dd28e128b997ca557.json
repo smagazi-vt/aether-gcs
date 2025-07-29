@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "aether_interfaces__py",
+		"source" : "/home/valtec/aether/aether_ws/build/aether_interfaces/aether_interfaces__py"
+	}
+}

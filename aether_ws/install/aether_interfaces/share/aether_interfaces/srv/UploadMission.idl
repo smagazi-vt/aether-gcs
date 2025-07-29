@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from aether_interfaces/srv/UploadMission.srv
+// generated code does not contain a copyright notice
+
+
+module aether_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Inputs")
+    struct UploadMission_Request {
+      string file_path;
+
+      uint8 target_system_id;
+    };
+    @verbatim (language="comment", text=
+      "Outputs")
+    struct UploadMission_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};
