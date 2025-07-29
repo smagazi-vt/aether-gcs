@@ -1,8 +1,4 @@
-source;share/valtec_onboard_intelligence/hook/cmake_prefix_path.ps1
-source;share/valtec_onboard_intelligence/hook/cmake_prefix_path.dsv
-source;share/valtec_onboard_intelligence/hook/cmake_prefix_path.sh
 source;share/valtec_onboard_intelligence/local_setup.bash
 source;share/valtec_onboard_intelligence/local_setup.dsv
-source;share/valtec_onboard_intelligence/local_setup.ps1
 source;share/valtec_onboard_intelligence/local_setup.sh
 source;share/valtec_onboard_intelligence/local_setup.zsh

@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_generator_c[0m
+[  3%] Built target aether_interfaces__cpp
+[ 12%] Built target aether_interfaces__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_typesupport_introspection_c[0m
+[ 12%] Built target ament_cmake_python_copy_aether_interfaces
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target aether_interfaces__rosidl_typesupport_c[0m
+[ 22%] Built target aether_interfaces__rosidl_typesupport_introspection_c
+[ 32%] Built target aether_interfaces__rosidl_typesupport_fastrtps_c
+[ 41%] Built target aether_interfaces__rosidl_typesupport_c
+[ 51%] Built target aether_interfaces__rosidl_typesupport_cpp
+[ 61%] Built target aether_interfaces__rosidl_typesupport_fastrtps_cpp
+/bin/sh: 1: /home/valtec/aether/.venv/bin/python3: not found
+[ 70%] Built target aether_interfaces__rosidl_typesupport_introspection_cpp
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_aether_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_aether_interfaces_egg] Error 127
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_aether_interfaces_egg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
