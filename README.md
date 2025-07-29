@@ -1,6 +1,6 @@
 # Aether GCS: A High-Level Overview
 
-The Aether project is a sophisticated system for commanding and controlling a fleet of autonomous drones. Instead of a simple remote control for one drone, it's a complete command center for a team of robotic vehicles. The entire system is built on a professional, distributed architecture, which can be broken down into three core components: The Drones, The Ground Control Station, and The Network.
+The Aether project is a system for commanding and controlling a fleet of autonomous drones. Instead of a simple remote control for one drone, it's a complete command center for a team of robotic vehicles. The entire system is built on a professional, distributed architecture, which can be broken down into three core components: The Drones, The Ground Control Station, and The Network.
 
 ## 1. The Drones: The Autonomous Agents
 Each drone in the fleet is an independent, intelligent robot. It has two "brains" working together:
@@ -20,20 +20,26 @@ This is the Raspberry Pi. It's the high-level brain that understands the overall
 ## 2. The Ground Control Station (GCS): The Command Center
 The GCS is the single interface where the human operator manages the entire fleet. It is not a remote control; it is a strategic command and monitoring tool.
 
-### Fleet Monitoring: The GCS displays a "God's-eye view" of the entire operation on a single screen. The operator can see the location, battery level, and status of every drone in real-time.
+### Fleet Monitoring: 
+The GCS displays a "God's-eye view" of the entire operation on a single screen. The operator can see the location, battery level, and status of every drone in real-time.
 
-### Mission Planning: The operator uses the GCS to create and assign high-level tasks to the drones, such as defining a search area for the fleet to investigate.
+### Mission Planning: 
+The operator uses the GCS to create and assign high-level tasks to the drones, such as defining a search area for the fleet to investigate.
 
-### Human Oversight: The GCS is the ultimate safety tool. It allows the operator to monitor the fleet's autonomous behavior and intervene at any time by issuing high-level commands like "Pause Mission" or "Return to Launch."
+### Human Oversight: 
+The GCS is the ultimate safety tool. It allows the operator to monitor the fleet's autonomous behavior and intervene at any time by issuing high-level commands like "Pause Mission" or "Return to Launch."
 
 ## 3. The Network: The Communication Link
 The network is the invisible fabric that connects everything.
 
-### The Connection: For the demo, all drones and the GCS connect to a single Wi-Fi router on the ground. In the final version, each drone will have its own Starlink terminal, giving the fleet virtually unlimited range.
+### The Connection: 
+For the demo, all drones and the GCS connect to a single Wi-Fi router on the ground. In the final version, each drone will have its own Starlink terminal, giving the fleet virtually unlimited range.
 
-### The Secure Layer (Tailscale): We use a software tool called Tailscale to create a secure, private network that works over any internet connection. This makes all the drones and the GCS feel like they are on the same local network, even if they are miles apart.
+### The Secure Layer (Tailscale): 
+We use a software tool called Tailscale to create a secure, private network that works over any internet connection. This makes all the drones and the GCS feel like they are on the same local network, even if they are miles apart.
 
-### The Language (ROS 2): All the high-level communication—fleet status, mission plans, and collaborative data—is sent using the powerful ROS 2 robotics framework.
+### The Language (ROS 2): 
+All the high-level communication—fleet status, mission plans, and collaborative data is sent using the ROS 2 robotics framework.
 
 ## The Workflow in Action
 A typical mission looks like this:
