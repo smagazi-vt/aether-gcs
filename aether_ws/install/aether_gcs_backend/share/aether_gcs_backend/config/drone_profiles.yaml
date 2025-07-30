@@ -1,0 +1,38 @@
+# This file defines the "profiles" for different drone firmwares.
+# It tells the GCS how to interface with each type.
+# The '{id}' placeholder will be replaced with the drone's system ID.
+
+drone_profiles:
+  px4:
+    topics:
+      state: "/mavros_{id}/state"
+      global_position: "/mavros_{id}/global_position/global"
+      local_position: "/mavros_{id}/local_position/pose"
+    mode_mapping:
+      "MANUAL": "MANUAL"
+      "ACRO": "ACRO"
+      "STABILIZED": "STABILIZED"
+      "RATTITUDE": "RATTITUDE"
+      "ALTITUDE": "ALTITUDE_HOLD"
+      "POSITION": "POSITION_HOLD"
+      "OFFBOARD": "GCS_CONTROL"
+      "MISSION": "MISSION"
+      "RETURN": "RTL"
+      "LAND": "LAND"
+      "TAKEOFF": "TAKEOFF"
+  
+  ardupilot:
+    topics:
+      state: "/mavros_{id}/state"
+      global_position: "/mavros_{id}/global_position/global"
+      local_position: "/mavros_{id}/local_position/pose"
+    mode_mapping:
+      "STABILIZE": "STABILIZED"
+      "ACRO": "ACRO"
+      "ALT_HOLD": "ALTITUDE_HOLD"
+      "AUTO": "MISSION"
+      "GUIDED": "GCS_CONTROL"
+      "LOITER": "POSITION_HOLD"
+      "RTL": "RTL"
+      "LAND": "LAND"
+      "TAKEOFF": "TAKEOFF"

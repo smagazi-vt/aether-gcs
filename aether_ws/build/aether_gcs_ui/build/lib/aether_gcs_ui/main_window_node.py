@@ -16,8 +16,25 @@ class GCSMainWindow(QMainWindow, Node):
     It subscribes to the centralized fleet state topic for all its data.
     """
     def __init__(self):
-        super(GCSMainWindow, self).__init__()
-        Node.__init__(self, 'aether_gcs_ui_node')
+        # The correct way to initialize multiple inheritance with required args:
+        # Call super() with arguments that satisfy ALL base classes' __init__ methods
+        # In this case, Node needs 'node_name'. QMainWindow does not.
+        # So, we pass 'node_name' when calling super() in a way that Node.__init__
+        # will receive it.
+        #
+        # Python's super() mechanism, when used correctly, will ensure that
+        # each __init__ method in the MRO is called exactly once.
+        
+        # Pass the node_name argument to the Node constructor through super()
+        # The MRO will determine which __init__ gets called first.
+        # For GCSMainWindow(QMainWindow, Node), the MRO is:
+        # GCSMainWindow -> QMainWindow -> Node -> object.
+        #
+        # The key is that Node's __init__ expects 'node_name' as a positional argument.
+        # So we include it in the super() call here, and it will be consumed
+        # by Node's __init__ when it's its turn in the MRO chain.
+
+        super().__init__(node_name='aether_gcs_ui_node')
 
         self.setWindowTitle("Aether GCS")
         self.setGeometry(100, 100, 800, 600)
