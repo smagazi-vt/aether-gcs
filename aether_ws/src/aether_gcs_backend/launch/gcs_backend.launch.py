@@ -17,7 +17,7 @@ def generate_launch_description():
             package='aether_gcs_backend',
             #TODO: VERIFY THE ENTRYPOINT NAME
             executable='fleet_manager', # Assumes you named the entry point 'fleet_manager'
-            name='fleet_manager_node',
+            name='fleet_manager',
             output='screen',
             parameters=[{'drone_profiles_path': config_file_path}]
         )

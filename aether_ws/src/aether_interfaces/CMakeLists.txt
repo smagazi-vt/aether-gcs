@@ -8,11 +8,6 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-
-# --- THIS IS THE CRITICAL FIX ---
-# We must explicitly find the std_msgs package so that CMake knows where
-# to find the header files (like header__struct.h) that our custom
-# FleetState.msg depends on.
 find_package(std_msgs REQUIRED)
 
 # This is the command that generates your custom service and message code.
@@ -20,6 +15,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UploadMission.srv"
   "msg/DroneState.msg"
   "msg/FleetState.msg"
+  DEPENDENCIES std_msgs
 )
 
 if(BUILD_TESTING)
