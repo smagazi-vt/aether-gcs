@@ -1,0 +1,2 @@
+Invoking command in '/home/valtec/aether/aether-gcs/aether_ws/build/aether_interfaces': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether-gcs/aether_ws/build/aether_interfaces -- -j20 -l20
+Invoked command in '/home/valtec/aether/aether-gcs/aether_ws/build/aether_interfaces' returned '2': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether-gcs/aether_ws/build/aether_interfaces -- -j20 -l20

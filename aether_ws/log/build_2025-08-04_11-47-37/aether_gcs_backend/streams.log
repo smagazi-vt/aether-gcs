@@ -1,0 +1,22 @@
+[0.543s] Invoking command in '/home/valtec/aether/aether_ws/src/aether_gcs_backend': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_backend build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_backend/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log --single-version-externally-managed install_data
+[0.699s] running egg_info
+[0.700s] writing ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/PKG-INFO
+[0.700s] writing dependency_links to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/dependency_links.txt
+[0.700s] writing entry points to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/entry_points.txt
+[0.700s] writing requirements to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/requires.txt
+[0.700s] writing top-level names to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/top_level.txt
+[0.701s] reading manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+[0.702s] writing manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+[0.702s] running build
+[0.702s] running build_py
+[0.702s] running install
+[0.702s] running install_lib
+[0.703s] running install_data
+[0.703s] running install_egg_info
+[0.705s] removing '/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.0-py3.10.egg-info' (and everything under it)
+[0.705s] Copying ../../build/aether_gcs_backend/aether_gcs_backend.egg-info to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.0-py3.10.egg-info
+[0.705s] running install_scripts
+[0.721s] Installing fleet_manager script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+[0.721s] Installing mission_planner script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+[0.721s] writing list of installed files to '/home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log'
+[0.738s] Invoked command in '/home/valtec/aether/aether_ws/src/aether_gcs_backend' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_backend build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_backend/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log --single-version-externally-managed install_data
