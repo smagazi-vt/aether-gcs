@@ -1,8 +1,10 @@
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__init__.py
+/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/calibration_manager_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/mission_planner_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/general_fleet_manager.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/fleet_manager_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/__init__.cpython-310.pyc
+/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/calibration_manager_node.cpython-310.pyc
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/mission_planner_node.cpython-310.pyc
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/general_fleet_manager.cpython-310.pyc
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/fleet_manager_node.cpython-310.pyc
@@ -17,5 +19,6 @@
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.0-py3.10.egg-info/top_level.txt
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.0-py3.10.egg-info/requires.txt
+/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/calibration_manager
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/fleet_manager
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/mission_planner

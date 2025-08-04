@@ -9,6 +9,7 @@ setup.py
 ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/top_level.txt
 ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/zip-safe
 aether_gcs_ui/__init__.py
+aether_gcs_ui/calibration_wizard.py
 aether_gcs_ui/main_window_node.py
 resource/aether_gcs_ui
 test/test_copyright.py

@@ -4,7 +4,7 @@
   <name>aether_gcs_backend</name>
   <version>0.0.1</version>
   <description>The backend logic and fleet management for the Aether GCS.</description>
-  <maintainer email="valtec@todo.todo">valtec</maintainer>
+  <maintainer email="sara.magaziotisginori@valtec.ai">Valtec - Sara Magaziotis-Ginori</maintainer>
   <license>Apache-2.0</license>
 
   <!-- These are the ROS 2 packages your code depends on to run. -->
@@ -14,6 +14,7 @@
   <depend>launch</depend>
   <depend>launch_ros</depend>
   <depend>ament_index_python</depend>
+  <depend>aether_interfaces</depend>
 
   <!-- These are dependencies only needed for testing. -->
   <test_depend>ament_copyright</test_depend>

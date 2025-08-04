@@ -405,6 +405,30 @@ aether_interfaces__py/fast:
 	$(MAKE) $(MAKESILENT) -f aether_interfaces__py/CMakeFiles/aether_interfaces__py.dir/build.make aether_interfaces__py/CMakeFiles/aether_interfaces__py.dir/build
 .PHONY : aether_interfaces__py/fast
 
+rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.o: rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.o
+.PHONY : rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.o
+
+# target to build an object file
+rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.o
+.PHONY : rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.o
+
+rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.i: rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.i
+.PHONY : rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.i
+.PHONY : rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.i
+
+rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.s: rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.s
+.PHONY : rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.s
+.PHONY : rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.c.s
+
 rosidl_generator_c/aether_interfaces/msg/detail/drone_state__functions.o: rosidl_generator_c/aether_interfaces/msg/detail/drone_state__functions.c.o
 .PHONY : rosidl_generator_c/aether_interfaces/msg/detail/drone_state__functions.o
 
@@ -452,6 +476,30 @@ rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.s: rosidl
 rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.c.s
 .PHONY : rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.c.s
+
+rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.o: rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.o
+.PHONY : rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.o
+
+# target to build an object file
+rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.o
+.PHONY : rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.o
+
+rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.i: rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.i
+.PHONY : rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.i
+.PHONY : rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.i
+
+rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.s: rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.s
+.PHONY : rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_c.dir/rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.s
+.PHONY : rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.c.s
 
 rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.o: rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.c.o
 .PHONY : rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.o
@@ -549,6 +597,30 @@ rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.o: rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o
+.PHONY : rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.o
+
+# target to build an object file
+rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o
+.PHONY : rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o
+
+rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.i: rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.i
+.PHONY : rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.i
+.PHONY : rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.i
+
+rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.s: rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.s
+.PHONY : rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.s
+.PHONY : rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.s
+
 rosidl_generator_py/aether_interfaces/msg/_drone_state_s.o: rosidl_generator_py/aether_interfaces/msg/_drone_state_s.c.o
 .PHONY : rosidl_generator_py/aether_interfaces/msg/_drone_state_s.o
 
@@ -597,6 +669,30 @@ rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.c.s
 .PHONY : rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.c.s
 
+rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.o: rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.o
+.PHONY : rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.o
+
+# target to build an object file
+rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.o
+.PHONY : rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.o
+
+rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.i: rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.i
+.PHONY : rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.i
+.PHONY : rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.i
+
+rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.s: rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.s
+.PHONY : rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.s
+.PHONY : rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.s
+
 rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.o: rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c.o
 .PHONY : rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.o
 
@@ -620,6 +716,30 @@ rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.s: rosidl_generator_
 rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c.s
 .PHONY : rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c.s
+
+rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.o: rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.o
+
+rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.i: rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.i
+
+rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.s: rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.s
 
 rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.o: rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.o
@@ -669,6 +789,30 @@ rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.cpp.s
 
+rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.o: rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.o
+
+rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.i: rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.i
+
+rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.s: rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp.s
+
 rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.o: rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.o
 
@@ -692,6 +836,30 @@ rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.s: rosid
 rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.cpp.s
+
+rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.o: rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.o
+
+rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.i: rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.i
+
+rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.s: rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.cpp.s
 
 rosidl_typesupport_cpp/aether_interfaces/msg/drone_state__type_support.o: rosidl_typesupport_cpp/aether_interfaces/msg/drone_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/drone_state__type_support.o
@@ -741,6 +909,30 @@ rosidl_typesupport_cpp/aether_interfaces/msg/fleet_state__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/msg/fleet_state__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/aether_interfaces/msg/fleet_state__type_support.cpp.s
 
+rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.o: rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.o
+
+rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.i: rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.i
+
+rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.s: rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.cpp.s
+
 rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.o: rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.o
 
@@ -764,6 +956,30 @@ rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.s: ros
 rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.o: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.i: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.s: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.o: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.o
@@ -813,6 +1029,30 @@ rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_sup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.o: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.i: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.s: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.o: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.o
 
@@ -836,6 +1076,30 @@ rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.o: rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.i: rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.s: rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.o: rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.o
@@ -885,6 +1149,30 @@ rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.o: rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.i: rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.s: rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.o: rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.o
 
@@ -908,6 +1196,30 @@ rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload
 rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.cpp.s
+
+rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.o: rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.o
+
+rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.i: rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.i
+
+rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.s: rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.c.s
 
 rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__type_support.o: rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__type_support.o
@@ -957,6 +1269,30 @@ rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/fleet_state__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/fleet_state__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/fleet_state__type_support.c.s
 
+rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.o: rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.o
+
+rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.i: rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.i
+
+rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.s: rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.c.s
+
 rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.o: rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.o
 
@@ -980,6 +1316,30 @@ rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__
 rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.o: rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.i: rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.s: rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/drone_state__type_support.o: rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/drone_state__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/drone_state__type_support.o
@@ -1028,6 +1388,30 @@ rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__t
 rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.o: rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.i: rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.s: rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/aether_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.o: rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.o
@@ -1084,12 +1468,18 @@ help:
 	@echo "... aether_interfaces__rosidl_typesupport_introspection_c"
 	@echo "... aether_interfaces__rosidl_typesupport_introspection_c__pyext"
 	@echo "... aether_interfaces__rosidl_typesupport_introspection_cpp"
+	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.o"
+	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.i"
+	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.s"
 	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/drone_state__functions.o"
 	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/drone_state__functions.i"
 	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/drone_state__functions.s"
 	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.o"
 	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.i"
 	@echo "... rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__functions.s"
+	@echo "... rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.o"
+	@echo "... rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.i"
+	@echo "... rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__functions.s"
 	@echo "... rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.o"
 	@echo "... rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.i"
 	@echo "... rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.s"
@@ -1102,66 +1492,108 @@ help:
 	@echo "... rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.o"
+	@echo "... rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.i"
+	@echo "... rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.s"
 	@echo "... rosidl_generator_py/aether_interfaces/msg/_drone_state_s.o"
 	@echo "... rosidl_generator_py/aether_interfaces/msg/_drone_state_s.i"
 	@echo "... rosidl_generator_py/aether_interfaces/msg/_drone_state_s.s"
 	@echo "... rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.o"
 	@echo "... rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.i"
 	@echo "... rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.s"
+	@echo "... rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.o"
+	@echo "... rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.i"
+	@echo "... rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.s"
 	@echo "... rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.o"
 	@echo "... rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.i"
 	@echo "... rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.s"
+	@echo "... rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.o"
+	@echo "... rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.i"
+	@echo "... rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.s"
 	@echo "... rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.o"
 	@echo "... rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.i"
 	@echo "... rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.s"
 	@echo "... rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.o"
 	@echo "... rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.i"
 	@echo "... rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.s"
+	@echo "... rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.o"
+	@echo "... rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.i"
+	@echo "... rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.s"
 	@echo "... rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.o"
 	@echo "... rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.i"
 	@echo "... rosidl_typesupport_c/aether_interfaces/srv/upload_mission__type_support.s"
+	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.o"
+	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.i"
+	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/calibration_status__type_support.s"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/drone_state__type_support.o"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/drone_state__type_support.i"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/drone_state__type_support.s"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/fleet_state__type_support.o"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/fleet_state__type_support.i"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/msg/fleet_state__type_support.s"
+	@echo "... rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.o"
+	@echo "... rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.i"
+	@echo "... rosidl_typesupport_cpp/aether_interfaces/srv/start_calibration__type_support.s"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.o"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.i"
 	@echo "... rosidl_typesupport_cpp/aether_interfaces/srv/upload_mission__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/calibration_status__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/drone_state__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/msg/detail/dds_fastrtps/fleet_state__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/start_calibration__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/aether_interfaces/srv/detail/dds_fastrtps/upload_mission__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/calibration_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/fleet_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/fleet_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/fleet_state__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/start_calibration__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/calibration_status__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/drone_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/drone_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/drone_state__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/msg/detail/fleet_state__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/start_calibration__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/aether_interfaces/srv/detail/upload_mission__type_support.s"

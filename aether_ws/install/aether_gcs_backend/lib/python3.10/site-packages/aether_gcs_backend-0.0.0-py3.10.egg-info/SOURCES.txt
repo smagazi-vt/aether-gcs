@@ -9,6 +9,7 @@ setup.py
 ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/top_level.txt
 ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/zip-safe
 aether_gcs_backend/__init__.py
+aether_gcs_backend/calibration_manager_node.py
 aether_gcs_backend/fleet_manager_node.py
 aether_gcs_backend/general_fleet_manager.py
 aether_gcs_backend/mission_planner_node.py

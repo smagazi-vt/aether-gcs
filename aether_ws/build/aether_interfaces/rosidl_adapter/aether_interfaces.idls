@@ -1,3 +1,5 @@
 /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/UploadMission.idl
 /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/DroneState.idl
 /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/FleetState.idl
+/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/StartCalibration.idl
+/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/CalibrationStatus.idl

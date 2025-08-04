@@ -2,10 +2,17 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>aether_gcs_ui</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="valtec@todo.todo">valtec</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.0.1</version>
+  <description>The graphical user interface for the Aether GCS.</description>
+  <maintainer email="sara.magaziotisginori@valtec.ai">Valtec - Sara Magaziotis-Ginori</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- ROS 2 Dependencies -->
+  <depend>rclpy</depend>
+  <depend>aether_interfaces</depend>
+
+  <!-- System dependency for PyQt6 -->
+  <depend>python3-pyqt6</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from aether_interfaces/srv/StartCalibration.srv
+// generated code does not contain a copyright notice
+
+
+module aether_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct StartCalibration_Request {
+      uint8 target_system_id;
+
+      @verbatim (language="comment", text=
+        "e.g., \"accel\", \"gyro\", \"mag\"")
+      string sensor_type;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct StartCalibration_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

@@ -81,6 +81,16 @@ CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/de
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__struct.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__traits.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/start_calibration.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__builder.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__struct.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__traits.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__type_support.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/calibration_status.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__builder.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__struct.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -101,6 +111,8 @@ rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/s
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/srv/UploadMission.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/DroneState.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/FleetState.idl
+rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/srv/StartCalibration.idl
+rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/CalibrationStatus.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -178,7 +190,42 @@ rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__traits.hpp: rosid
 rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp
 
+rosidl_generator_cpp/aether_interfaces/srv/start_calibration.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/start_calibration.hpp
+
+rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__builder.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__builder.hpp
+
+rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__struct.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__struct.hpp
+
+rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__traits.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__traits.hpp
+
+rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__type_support.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/calibration_status.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/calibration_status.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__builder.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__builder.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__struct.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__struct.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp
+
 aether_interfaces__cpp: CMakeFiles/aether_interfaces__cpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/calibration_status.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__builder.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__struct.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__builder.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__struct.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__traits.hpp
@@ -189,10 +236,15 @@ aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/fleet_state__type_support.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/drone_state.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/fleet_state.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__builder.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__struct.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__traits.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/start_calibration__type_support.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__builder.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__struct.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__traits.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/detail/upload_mission__type_support.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/start_calibration.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
 aether_interfaces__cpp: CMakeFiles/aether_interfaces__cpp.dir/build.make
 .PHONY : aether_interfaces__cpp

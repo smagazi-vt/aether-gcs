@@ -1,0 +1,4 @@
+Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence -- -j20 -l20
+Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '0': /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence -- -j20 -l20
+Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence
+Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '0': /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence

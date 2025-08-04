@@ -1,7 +1,13 @@
+msg/CalibrationStatus.idl
+msg/CalibrationStatus.msg
 msg/DroneState.idl
 msg/DroneState.msg
 msg/FleetState.idl
 msg/FleetState.msg
+srv/StartCalibration.idl
+srv/StartCalibration.srv
+srv/StartCalibration_Request.msg
+srv/StartCalibration_Response.msg
 srv/UploadMission.idl
 srv/UploadMission.srv
 srv/UploadMission_Request.msg
