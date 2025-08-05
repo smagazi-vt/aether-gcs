@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence/collision_avoider_node" "TARGETS" "collision_avoider_node" "DESTINATION" "lib/valtec_onboard_intelligence")

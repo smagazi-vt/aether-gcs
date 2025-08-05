@@ -1,2 +1,1 @@
-source;share/aether_gcs_logic_cpp/environment/ament_prefix_path.sh
-source;share/aether_gcs_logic_cpp/environment/path.sh
+/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp/ament_cmake_environment_hooks/local_setup.dsv

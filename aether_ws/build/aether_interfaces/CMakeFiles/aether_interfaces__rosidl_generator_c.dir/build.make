@@ -121,7 +121,7 @@ rosidl_generator_c/aether_interfaces/srv/upload_mission.h: /opt/ros/humble/share
 rosidl_generator_c/aether_interfaces/srv/upload_mission.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/aether_interfaces/srv/upload_mission.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_c__arguments.json
+	/home/valtec/aether/.venv/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.h: rosidl_generator_c/aether_interfaces/srv/upload_mission.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.h

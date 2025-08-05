@@ -10,8 +10,8 @@ from PyQt6.QtCore import QTimer
 from PyQt6.QtGui import QAction
 
 from aether_interfaces.srv import UploadMission, StartCalibration
-from aether_interfaces.msg import FleetState
-from .calibration_wizard import CalibrationWizard # IMPORT THE WIZARD UI
+from aether_interfaces.msg import FleetState, DeconflictionWarning # IMPORT THE NEW WARNING MESSAGE
+from .calibration_wizard import CalibrationWizard
 
 class GCSMainWindow(QMainWindow, Node):
     """
@@ -50,7 +50,6 @@ class GCSMainWindow(QMainWindow, Node):
         self.setCentralWidget(self.central_widget)
         self.layout = QVBoxLayout(self.central_widget)
 
-        # --- NEW: Create a Menu Bar ---
         self.menu_bar = self.menuBar()
         self.sensors_menu = self.menu_bar.addMenu("Sensors")
         
@@ -58,8 +57,6 @@ class GCSMainWindow(QMainWindow, Node):
         self.calibrate_accel_action.triggered.connect(self.on_calibrate_accel)
         self.sensors_menu.addAction(self.calibrate_accel_action)
         
-        # FUTURE IMPROVEMENT: ADD MENU ACTIONS FOR GYRO AND MAGNETOMETER CALIBRATION.
-
         self.title_label = QLabel("Aether Ground Control Station")
         font = self.title_label.font()
         font.setPointSize(20)
@@ -84,7 +81,6 @@ class GCSMainWindow(QMainWindow, Node):
 
         # --- ROS 2 Integration ---
         self.upload_mission_client = self.create_client(UploadMission, '/aether/upload_mission')
-        # --- NEW: Create a client for the calibration service ---
         self.start_calibration_client = self.create_client(StartCalibration, '/aether/start_calibration')
 
         self.fleet_state_subscriber = self.create_subscription(
@@ -94,11 +90,19 @@ class GCSMainWindow(QMainWindow, Node):
             10
         )
 
+        # --- NEW: Subscriber for deconfliction warnings ---
+        self.deconfliction_subscriber = self.create_subscription(
+            DeconflictionWarning,
+            '/aether/deconfliction_warnings',
+            self.deconfliction_warning_callback,
+            10
+        )
+
         self.ros_timer = QTimer(self)
         self.ros_timer.timeout.connect(self.spin_ros)
         self.ros_timer.start(100)
 
-        self.get_logger().info("GCS UI Node has started and is listening for fleet state.")
+        self.get_logger().info("GCS UI Node has started.")
 
     def spin_ros(self):
         rclpy.spin_once(self, timeout_sec=0)
@@ -119,6 +123,16 @@ class GCSMainWindow(QMainWindow, Node):
 
         self.fleet_state = new_state
         self.update_fleet_table()
+    
+    def deconfliction_warning_callback(self, msg):
+        """Displays a pop-up warning when a deconfliction message is received."""
+        self.get_logger().warn(f"Received deconfliction warning: {msg.warning_text}")
+        QMessageBox.critical(
+            self, 
+            "Strategic Conflict Warning", 
+            f"Conflict detected between Drone {msg.drone_id_1} and Drone {msg.drone_id_2}!\n\n"
+            f"Details: {msg.warning_text}"
+        )
 
     def update_fleet_table(self):
         """Redraws the fleet status table with the latest data."""
@@ -186,10 +200,8 @@ class GCSMainWindow(QMainWindow, Node):
             QMessageBox.critical(self, "Service Error", "The calibration service is not available. Is the backend running?")
             return
 
-        # Create and show the wizard dialog
         self.wizard = CalibrationWizard(self, selected_drone_id)
         
-        # Send the request to the backend to start the process
         request = StartCalibration.Request()
         request.target_system_id = selected_drone_id
         request.sensor_type = "accel"
@@ -198,7 +210,6 @@ class GCSMainWindow(QMainWindow, Node):
         future = self.start_calibration_client.call_async(request)
         future.add_done_callback(self.on_start_calibration_response)
 
-        # Show the wizard to the user
         self.wizard.exec()
 
     def on_start_calibration_response(self, future):
@@ -208,7 +219,6 @@ class GCSMainWindow(QMainWindow, Node):
             if not response.success:
                 self.get_logger().error(f"Backend failed to start calibration: {response.message}")
                 QMessageBox.critical(self, "Calibration Error", f"Could not start calibration.\n\nReason: {response.message}")
-                # If the backend failed to start, we should close the wizard we just opened.
                 if hasattr(self, 'wizard') and self.wizard.isVisible():
                     self.wizard.reject()
         except Exception as e:

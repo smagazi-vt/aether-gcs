@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating aether_gcs_ui.egg-info
+writing aether_gcs_ui.egg-info/PKG-INFO
+writing dependency_links to aether_gcs_ui.egg-info/dependency_links.txt
+writing entry points to aether_gcs_ui.egg-info/entry_points.txt
+writing requirements to aether_gcs_ui.egg-info/requires.txt
+writing top-level names to aether_gcs_ui.egg-info/top_level.txt
+writing manifest file 'aether_gcs_ui.egg-info/SOURCES.txt'
+reading manifest file 'aether_gcs_ui.egg-info/SOURCES.txt'
+writing manifest file 'aether_gcs_ui.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages/aether-gcs-ui.egg-link (link to .)
+Installing aether_ui script to /home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/aether_gcs_ui
+
+Installed /home/valtec/aether/aether_ws/build/aether_gcs_ui
+running symlink_data
+creating /home/valtec/aether/aether_ws/install/aether_gcs_ui/share/ament_index
+creating /home/valtec/aether/aether_ws/install/aether_gcs_ui/share/ament_index/resource_index
+creating /home/valtec/aether/aether_ws/install/aether_gcs_ui/share/ament_index/resource_index/packages
+symbolically linking /home/valtec/aether/aether_ws/build/aether_gcs_ui/resource/aether_gcs_ui -> /home/valtec/aether/aether_ws/install/aether_gcs_ui/share/ament_index/resource_index/packages
+symbolically linking /home/valtec/aether/aether_ws/build/aether_gcs_ui/package.xml -> /home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui

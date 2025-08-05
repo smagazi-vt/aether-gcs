@@ -698,12 +698,25 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_long.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__struct.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__builder.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__traits.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__type_support.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/c++/11/regex \
   /usr/include/c++/11/bitset \
   /usr/include/c++/11/stack \
@@ -722,8 +735,32 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
   /usr/include/c++/11/bits/regex.h \
   /usr/include/c++/11/bits/regex.tcc \
   /usr/include/c++/11/bits/regex_executor.h \
-  /usr/include/c++/11/bits/regex_executor.tcc
+  /usr/include/c++/11/bits/regex_executor.tcc \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp
 
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/c++/11/cfloat:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp:
 
 /usr/include/c++/11/bits/regex_executor.h:
 
@@ -749,11 +786,23 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /usr/include/c++/11/regex:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__type_support.hpp:
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__struct.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_long.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist_stamped.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -773,6 +822,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
 
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
@@ -782,6 +833,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
@@ -930,6 +983,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
@@ -1105,6 +1160,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
+
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
@@ -1171,8 +1228,6 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /usr/include/c++/11/ext/concurrence.h:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__traits.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
@@ -1232,6 +1287,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
@@ -1301,6 +1358,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
@@ -1308,6 +1367,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /usr/include/c++/11/iosfwd:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
 /usr/include/c++/11/initializer_list:
 
@@ -1320,6 +1381,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
@@ -1385,6 +1448,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
@@ -1404,6 +1469,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /usr/include/c++/11/set:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -1475,8 +1542,6 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /usr/include/c++/11/bits/regex.h:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
 
 /opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
@@ -1508,6 +1573,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 /usr/include/c++/11/array:
+
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -1558,8 +1625,6 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__builder.hpp:
 
 /usr/include/c++/11/cwchar:
 
@@ -1727,11 +1792,15 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
+/usr/include/c++/11/math.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/tf2/tf2/visibility_control.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
@@ -1807,6 +1876,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
 
+/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
+
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
@@ -1836,6 +1907,8 @@ CMakeFiles/collision_avoider_node.dir/src/collision_avoider_node.cpp.o: /home/va
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
 /opt/ros/humble/include/rcl/rcl/visibility_control.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_stamped__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
 

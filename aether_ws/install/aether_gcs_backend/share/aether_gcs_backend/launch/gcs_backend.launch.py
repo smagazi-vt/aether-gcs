@@ -8,7 +8,6 @@ def generate_launch_description():
     This launch file starts all the necessary backend nodes for the Aether GCS.
     """
     
-    # Get the path to the drone_profiles.yaml configuration file
     config_file_path = os.path.join(
         get_package_share_directory('aether_gcs_backend'),
         'config',
@@ -17,7 +16,6 @@ def generate_launch_description():
 
     # --- Node Definitions ---
 
-    # 1. The Fleet Manager Node
     fleet_manager_node = Node(
         package='aether_gcs_backend',
         executable='fleet_manager',
@@ -26,7 +24,6 @@ def generate_launch_description():
         parameters=[{'drone_profiles_path': config_file_path}]
     )
 
-    # 2. The Mission Planner Backend Node
     mission_planner_node = Node(
         package='aether_gcs_backend',
         executable='mission_planner',
@@ -34,8 +31,6 @@ def generate_launch_description():
         output='screen'
     )
     
-    # 3. The Calibration Manager Node (NEWLY ADDED)
-    # This node provides the service for starting and monitoring sensor calibrations.
     calibration_manager_node = Node(
         package='aether_gcs_backend',
         executable='calibration_manager',
@@ -43,20 +38,19 @@ def generate_launch_description():
         output='screen'
     )
 
-    # 4. The Collision Avoider Node (C++)
-    # For the MVP/demo, this runs on the GCS.
-    collision_avoider_node = Node(
-        package='valtec_onboard_intelligence',
-        executable='collision_avoider_node',
-        name='collision_avoider_node',
+    # --- NEWLY ADDED STRATEGIC DECONFLICTION NODE ---
+    # This C++ node runs on the GCS to provide high-level warnings.
+    strategic_deconfliction_node = Node(
+        package='aether_gcs_logic_cpp', # The new C++ package
+        executable='strategic_deconfliction_node',
+        name='strategic_deconfliction_node',
         output='screen'
     )
 
 
-    # The LaunchDescription object gathers all nodes and actions to be executed.
     return LaunchDescription([
         fleet_manager_node,
         mission_planner_node,
         calibration_manager_node,
-        collision_avoider_node
+        strategic_deconfliction_node # <-- ADDED THIS NODE
     ])

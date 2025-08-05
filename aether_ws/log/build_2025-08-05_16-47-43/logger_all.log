@@ -1,0 +1,386 @@
+[0.055s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.055s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x721c2d3513c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x721c2d350eb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x721c2d350eb0>>)
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.134s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/valtec/aether/aether_ws'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_backend) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aether_gcs_backend' with type 'ros.ament_python' and name 'aether_gcs_backend'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_logic_cpp) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aether_gcs_logic_cpp' with type 'ros.ament_cmake' and name 'aether_gcs_logic_cpp'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_gcs_ui) by extension 'ros'
+[0.145s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aether_gcs_ui' with type 'ros.ament_python' and name 'aether_gcs_ui'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/aether_interfaces) by extension 'ros'
+[0.145s] DEBUG:colcon.colcon_core.package_identification:Package 'src/aether_interfaces' with type 'ros.catkin' and name 'aether_interfaces'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/valtec_onboard_intelligence) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/valtec_onboard_intelligence' with type 'ros.ament_cmake' and name 'valtec_onboard_intelligence'
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.164s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/valtec/aether/aether_ws/install
+[0.165s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 277 installed packages in /opt/ros/humble
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'aether_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'aether_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/valtec/aether/aether_ws/build/aether_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/valtec/aether/aether_ws/install/aether_interfaces', 'merge_install': False, 'path': '/home/valtec/aether/aether_ws/src/aether_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'valtec_onboard_intelligence' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'valtec_onboard_intelligence' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence', 'merge_install': False, 'path': '/home/valtec/aether/aether_ws/src/valtec_onboard_intelligence', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_backend' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'aether_gcs_backend' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/valtec/aether/aether_ws/build/aether_gcs_backend', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/valtec/aether/aether_ws/install/aether_gcs_backend', 'merge_install': False, 'path': '/home/valtec/aether/aether_ws/src/aether_gcs_backend', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_logic_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'aether_gcs_logic_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp', 'merge_install': False, 'path': '/home/valtec/aether/aether_ws/src/aether_gcs_logic_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'aether_gcs_ui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'aether_gcs_ui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/valtec/aether/aether_ws/build/aether_gcs_ui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/valtec/aether/aether_ws/install/aether_gcs_ui', 'merge_install': False, 'path': '/home/valtec/aether/aether_ws/src/aether_gcs_ui', 'symlink_install': False, 'test_result_base': None}
+[0.184s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.185s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.185s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/valtec/aether/aether_ws/src/aether_interfaces' with build type 'catkin'
+[0.185s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/valtec/aether/aether_ws/src/aether_interfaces'
+[0.187s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.189s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/valtec/aether/aether_ws/src/valtec_onboard_intelligence' with build type 'ament_cmake'
+[0.189s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/valtec/aether/aether_ws/src/valtec_onboard_intelligence'
+[0.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.189s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_interfaces
+[0.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/valtec_onboard_intelligence -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence
+[0.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/valtec_onboard_intelligence -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence
+[0.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence -- -j20 -l20
+[0.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence -- -j20 -l20
+[0.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence
+[0.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(valtec_onboard_intelligence)
+[0.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence' for CMake module files
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence' for CMake config files
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('valtec_onboard_intelligence', 'cmake_prefix_path')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/hook/cmake_prefix_path.ps1'
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/hook/cmake_prefix_path.dsv'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/hook/cmake_prefix_path.sh'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/bin'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib/pkgconfig/valtec_onboard_intelligence.pc'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib/python3.10/site-packages'
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/bin'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.sh'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.bash'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.zsh'
+[0.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/colcon-core/packages/valtec_onboard_intelligence)
+[0.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(valtec_onboard_intelligence)
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence' for CMake module files
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence' for CMake config files
+[0.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('valtec_onboard_intelligence', 'cmake_prefix_path')
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/hook/cmake_prefix_path.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/hook/cmake_prefix_path.dsv'
+[0.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/hook/cmake_prefix_path.sh'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/bin'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib/pkgconfig/valtec_onboard_intelligence.pc'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib/python3.10/site-packages'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/bin'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.ps1'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.dsv'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.sh'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.bash'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/package.zsh'
+[0.695s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/colcon-core/packages/valtec_onboard_intelligence)
+[0.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_interfaces
+[0.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+[1.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+[1.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces
+[1.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces
+[1.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'ros_package_path')
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/ros_package_path.ps1'
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/ros_package_path.dsv'
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/ros_package_path.sh'
+[1.236s] Level 1:colcon.colcon_ros.task.catkin:checking '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages'
+[1.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'catkin_pythonpath')
+[1.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/catkin_pythonpath.ps1'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/catkin_pythonpath.dsv'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/catkin_pythonpath.sh'
+[1.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'pkg_config_path')
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pkg_config_path.ps1'
+[1.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pkg_config_path.dsv'
+[1.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pkg_config_path.sh'
+[1.240s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'pkg_config_path_multiarch')
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pkg_config_path_multiarch.ps1'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pkg_config_path_multiarch.dsv'
+[1.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pkg_config_path_multiarch.sh'
+[1.242s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aether_interfaces)
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces' for CMake module files
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces' for CMake config files
+[1.243s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'cmake_prefix_path')
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/cmake_prefix_path.ps1'
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/cmake_prefix_path.dsv'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/cmake_prefix_path.sh'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces/lib'
+[1.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'ld_library_path_lib')
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/ld_library_path_lib.ps1'
+[1.245s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/ld_library_path_lib.dsv'
+[1.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/ld_library_path_lib.sh'
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces/bin'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/pkgconfig/aether_interfaces.pc'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages'
+[1.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_interfaces', 'pythonpath')
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pythonpath.ps1'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pythonpath.dsv'
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/hook/pythonpath.sh'
+[1.247s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_interfaces/bin'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.ps1'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.dsv'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.sh'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.bash'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/package.zsh'
+[1.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/aether_interfaces/share/colcon-core/packages/aether_interfaces)
+[1.248s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/valtec/aether/aether_ws/src/aether_gcs_backend' with build type 'ament_python'
+[1.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_gcs_backend', 'ament_prefix_path')
+[1.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/hook/ament_prefix_path.ps1'
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/hook/ament_prefix_path.dsv'
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/hook/ament_prefix_path.sh'
+[1.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/valtec/aether/aether_ws/src/aether_gcs_logic_cpp' with build type 'ament_cmake'
+[1.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/valtec/aether/aether_ws/src/aether_gcs_logic_cpp'
+[1.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.253s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/valtec/aether/aether_ws/src/aether_gcs_ui' with build type 'ament_python'
+[1.253s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_gcs_ui', 'ament_prefix_path')
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/hook/ament_prefix_path.ps1'
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/hook/ament_prefix_path.dsv'
+[1.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/hook/ament_prefix_path.sh'
+[1.255s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.255s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.395s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/valtec/aether/aether_ws/src/aether_gcs_backend'
+[1.395s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.395s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_gcs_logic_cpp -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp
+[1.536s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/valtec/aether/aether_ws/src/aether_gcs_ui'
+[1.537s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.537s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_gcs_backend': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/valtec/aether/aether_ws/build/aether_gcs_backend/build
+[1.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_gcs_logic_cpp -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp
+[1.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp -- -j20 -l20
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_gcs_ui': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/valtec/aether/aether_ws/build/aether_gcs_ui/build
+[1.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp -- -j20 -l20
+[1.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp
+[1.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aether_gcs_logic_cpp)
+[1.811s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp' for CMake module files
+[1.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_gcs_logic_cpp
+[1.812s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp' for CMake config files
+[1.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_gcs_logic_cpp', 'cmake_prefix_path')
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/hook/cmake_prefix_path.ps1'
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/hook/cmake_prefix_path.dsv'
+[1.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/hook/cmake_prefix_path.sh'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/lib'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/bin'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/lib/pkgconfig/aether_gcs_logic_cpp.pc'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/lib/python3.10/site-packages'
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/bin'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.ps1'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.dsv'
+[1.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.sh'
+[1.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.bash'
+[1.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.zsh'
+[1.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/colcon-core/packages/aether_gcs_logic_cpp)
+[1.814s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aether_gcs_logic_cpp)
+[1.814s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp' for CMake module files
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp' for CMake config files
+[1.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_gcs_logic_cpp', 'cmake_prefix_path')
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/hook/cmake_prefix_path.ps1'
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/hook/cmake_prefix_path.dsv'
+[1.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/hook/cmake_prefix_path.sh'
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/lib'
+[1.815s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/bin'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/lib/pkgconfig/aether_gcs_logic_cpp.pc'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/lib/python3.10/site-packages'
+[1.816s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/bin'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.ps1'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.dsv'
+[1.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.sh'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.bash'
+[1.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/aether_gcs_logic_cpp/package.zsh'
+[1.818s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp/share/colcon-core/packages/aether_gcs_logic_cpp)
+[1.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_gcs_backend' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/valtec/aether/aether_ws/build/aether_gcs_backend/build
+[1.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/src/aether_gcs_backend': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_backend build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_backend/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log --single-version-externally-managed install_data --force
+[1.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/build/aether_gcs_ui' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/valtec/aether/aether_ws/build/aether_gcs_ui/build
+[1.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valtec/aether/aether_ws/src/aether_gcs_ui': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_ui build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_ui/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_ui/install.log --single-version-externally-managed install_data --force
+[2.147s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui' for CMake module files
+[2.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/src/aether_gcs_ui' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_ui build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_ui/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_ui/install.log --single-version-externally-managed install_data --force
+[2.148s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui' for CMake config files
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui/bin'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/pkgconfig/aether_gcs_ui.pc'
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages'
+[2.149s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_gcs_ui', 'pythonpath')
+[2.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/hook/pythonpath.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/hook/pythonpath.dsv'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/hook/pythonpath.sh'
+[2.150s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_ui/bin'
+[2.150s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aether_gcs_ui)
+[2.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/package.ps1'
+[2.151s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/package.dsv'
+[2.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/package.sh'
+[2.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/package.bash'
+[2.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/aether_gcs_ui/package.zsh'
+[2.152s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/aether_gcs_ui/share/colcon-core/packages/aether_gcs_ui)
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend' for CMake module files
+[2.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valtec/aether/aether_ws/src/aether_gcs_backend' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces:/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_ui:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/build/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_backend build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_backend/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log --single-version-externally-managed install_data --force
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend' for CMake config files
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend/bin'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/pkgconfig/aether_gcs_backend.pc'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages'
+[2.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('aether_gcs_backend', 'pythonpath')
+[2.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/hook/pythonpath.ps1'
+[2.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/hook/pythonpath.dsv'
+[2.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/hook/pythonpath.sh'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/valtec/aether/aether_ws/install/aether_gcs_backend/bin'
+[2.154s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(aether_gcs_backend)
+[2.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/package.ps1'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/package.dsv'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/package.sh'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/package.bash'
+[2.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/package.zsh'
+[2.155s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valtec/aether/aether_ws/install/aether_gcs_backend/share/colcon-core/packages/aether_gcs_backend)
+[2.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.156s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.159s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.159s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.159s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.166s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.166s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valtec/aether/aether_ws/install/local_setup.ps1'
+[2.167s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/valtec/aether/aether_ws/install/_local_setup_util_ps1.py'
+[2.168s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valtec/aether/aether_ws/install/setup.ps1'
+[2.169s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valtec/aether/aether_ws/install/local_setup.sh'
+[2.170s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/valtec/aether/aether_ws/install/_local_setup_util_sh.py'
+[2.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valtec/aether/aether_ws/install/setup.sh'
+[2.171s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valtec/aether/aether_ws/install/local_setup.bash'
+[2.172s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valtec/aether/aether_ws/install/setup.bash'
+[2.173s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valtec/aether/aether_ws/install/local_setup.zsh'
+[2.173s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valtec/aether/aether_ws/install/setup.zsh'

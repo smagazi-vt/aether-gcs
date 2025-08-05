@@ -1,6 +1,0 @@
-Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_interfaces
-Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': /usr/bin/cmake /home/valtec/aether/aether_ws/src/aether_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/aether_interfaces
-Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
-Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
-Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces
-Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces
