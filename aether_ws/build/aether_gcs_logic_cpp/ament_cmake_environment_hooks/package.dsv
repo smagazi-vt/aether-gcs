@@ -1,0 +1,4 @@
+source;share/aether_gcs_logic_cpp/local_setup.bash
+source;share/aether_gcs_logic_cpp/local_setup.dsv
+source;share/aether_gcs_logic_cpp/local_setup.sh
+source;share/aether_gcs_logic_cpp/local_setup.zsh

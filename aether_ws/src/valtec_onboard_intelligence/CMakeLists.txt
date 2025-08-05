@@ -10,6 +10,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(mavros_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 # Add the executable for your C++ node
 add_executable(collision_avoider_node src/collision_avoider_node.cpp)
@@ -19,6 +21,8 @@ ament_target_dependencies(collision_avoider_node
   "rclcpp"
   "geometry_msgs"
   "mavros_msgs"
+  "nav_msgs"
+  "tf2_ros"
 )
 
 # Install the executable so ros2 run can find it
@@ -27,7 +31,6 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Standard ament linting tests
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()

@@ -16,7 +16,7 @@ set(_valtec_onboard_intelligence_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT valtec_onboard_intelligence_FIND_QUIETLY)
-  message(STATUS "Found valtec_onboard_intelligence: 0.0.0 (${valtec_onboard_intelligence_DIR})")
+  message(STATUS "Found valtec_onboard_intelligence: 0.0.1 (${valtec_onboard_intelligence_DIR})")
 endif()
 
 # warn when using a deprecated package

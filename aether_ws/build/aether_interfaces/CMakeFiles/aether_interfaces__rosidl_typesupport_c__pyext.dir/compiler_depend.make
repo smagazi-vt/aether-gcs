@@ -256,6 +256,9 @@ CMakeFiles/aether_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__type_support.h \
   rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__struct.h \
   rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.h \
+  rosidl_generator_c/aether_interfaces/msg/detail/deconfliction_warning__type_support.h \
+  rosidl_generator_c/aether_interfaces/msg/detail/deconfliction_warning__struct.h \
+  rosidl_generator_c/aether_interfaces/msg/detail/deconfliction_warning__functions.h \
   rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__type_support.h \
   rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__struct.h \
   rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.h \
@@ -267,6 +270,10 @@ CMakeFiles/aether_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_p
 rosidl_generator_c/aether_interfaces/srv/detail/start_calibration__struct.h:
 
 rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.h:
+
+rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__type_support.h:
+
+rosidl_generator_c/aether_interfaces/msg/detail/deconfliction_warning__functions.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -301,6 +308,8 @@ rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.h:
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+rosidl_generator_c/aether_interfaces/msg/detail/deconfliction_warning__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -434,6 +443,8 @@ rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
+rosidl_generator_c/aether_interfaces/msg/detail/deconfliction_warning__struct.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/python3.10/cpython/abstract.h:
@@ -559,8 +570,6 @@ rosidl_generator_c/aether_interfaces/msg/detail/fleet_state__struct.h:
 rosidl_generator_c/aether_interfaces/msg/detail/calibration_status__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-rosidl_generator_c/aether_interfaces/srv/detail/upload_mission__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 

@@ -6,6 +6,7 @@ aether_interfaces.egg-info/dependency_links.txt
 aether_interfaces.egg-info/top_level.txt
 aether_interfaces/msg/__init__.py
 aether_interfaces/msg/_calibration_status.py
+aether_interfaces/msg/_deconfliction_warning.py
 aether_interfaces/msg/_drone_state.py
 aether_interfaces/msg/_fleet_state.py
 aether_interfaces/srv/__init__.py
