@@ -1,5 +1,7 @@
 msg/CalibrationStatus.idl
 msg/CalibrationStatus.msg
+msg/DeconflictionWarning.idl
+msg/DeconflictionWarning.msg
 msg/DroneState.idl
 msg/DroneState.msg
 msg/FleetState.idl

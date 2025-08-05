@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/aether_interfaces/msg/__init__.py"
   "../rosidl_generator_py/aether_interfaces/msg/_calibration_status.py"
   "../rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c"
+  "../rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning.py"
+  "../rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c"
   "../rosidl_generator_py/aether_interfaces/msg/_drone_state.py"
   "../rosidl_generator_py/aether_interfaces/msg/_drone_state_s.c"
   "../rosidl_generator_py/aether_interfaces/msg/_fleet_state.py"

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.o"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp.o.d"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/deconfliction_warning__type_support.cpp.o"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/deconfliction_warning__type_support.cpp.o.d"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.cpp.o"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.cpp.o.d"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.cpp.o"
@@ -12,6 +14,7 @@ file(REMOVE_RECURSE
   "libaether_interfaces__rosidl_typesupport_c.pdb"
   "libaether_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/aether_interfaces/msg/calibration_status__type_support.cpp"
+  "rosidl_typesupport_c/aether_interfaces/msg/deconfliction_warning__type_support.cpp"
   "rosidl_typesupport_c/aether_interfaces/msg/drone_state__type_support.cpp"
   "rosidl_typesupport_c/aether_interfaces/msg/fleet_state__type_support.cpp"
   "rosidl_typesupport_c/aether_interfaces/srv/start_calibration__type_support.cpp"

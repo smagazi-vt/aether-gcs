@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from aether_interfaces/msg/DeconflictionWarning.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module aether_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "A strategic warning from the GCS")
+    struct DeconflictionWarning {
+      std_msgs::msg::Header header;
+
+      uint8 drone_id_1;
+
+      uint8 drone_id_2;
+
+      @verbatim (language="comment", text=
+        "e.g., \"Mission for Drone 1 conflicts with Drone 2's area\"")
+      string warning_text;
+    };
+  };
+};

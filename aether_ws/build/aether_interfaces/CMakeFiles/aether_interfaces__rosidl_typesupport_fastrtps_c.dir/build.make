@@ -82,6 +82,7 @@ rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosid
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/aether_interfaces/msg/FleetState.idl
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/aether_interfaces/srv/StartCalibration.idl
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/aether_interfaces/msg/CalibrationStatus.idl
+rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/aether_interfaces/msg/DeconflictionWarning.idl
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -143,6 +144,12 @@ rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__r
 
 rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp
 
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.o: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp
@@ -214,13 +221,28 @@ CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesuppo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp -o CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.s
 
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o -MF CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o.d -o CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o -c /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp
+
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp > CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.i
+
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp -o CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.s
+
 # Object files for target aether_interfaces__rosidl_typesupport_fastrtps_c
 aether_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/upload_mission__type_support_c.cpp.o" \
 "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.cpp.o" \
 "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.cpp.o" \
 "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.o" \
-"CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o"
+"CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o" \
+"CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o"
 
 # External object files for target aether_interfaces__rosidl_typesupport_fastrtps_c
 aether_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
@@ -230,6 +252,7 @@ libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interf
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.cpp.o
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/srv/detail/start_calibration__type_support_c.cpp.o
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o
+libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: libaether_interfaces__rosidl_generator_c.so
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -243,7 +266,7 @@ libaether_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libb
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libaether_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libaether_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libaether_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -256,6 +279,8 @@ CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/clean:
 
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.cpp
 CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__rosidl_typesupport_fastrtps_c.h

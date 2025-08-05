@@ -10,6 +10,7 @@
   <!-- ROS 2 Dependencies -->
   <depend>rclpy</depend>
   <depend>aether_interfaces</depend>
+  
 
   <!-- System dependency for PyQt6 -->
   <depend>python3-pyqt6</depend>

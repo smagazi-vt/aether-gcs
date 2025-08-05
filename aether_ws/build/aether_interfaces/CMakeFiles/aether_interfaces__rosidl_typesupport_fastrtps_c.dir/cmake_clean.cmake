@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp.o.d"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o"
+  "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp.o.d"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.cpp.o"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.cpp.o.d"
   "CMakeFiles/aether_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__type_support_c.cpp.o"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "libaether_interfaces__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/calibration_status__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/deconfliction_warning__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/drone_state__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/aether_interfaces/msg/detail/fleet_state__rosidl_typesupport_fastrtps_c.h"

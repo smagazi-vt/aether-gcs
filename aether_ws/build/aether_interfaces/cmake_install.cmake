@@ -376,6 +376,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aether_interfaces/msg" TYPE FILE FILES "/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces/msg/DeconflictionWarning.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aether_interfaces/srv" TYPE FILE FILES "/home/valtec/aether/aether_ws/src/aether_interfaces/srv/UploadMission.srv")
 endif()
 
@@ -409,6 +413,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aether_interfaces/msg" TYPE FILE FILES "/home/valtec/aether/aether_ws/src/aether_interfaces/msg/CalibrationStatus.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aether_interfaces/msg" TYPE FILE FILES "/home/valtec/aether/aether_ws/src/aether_interfaces/msg/DeconflictionWarning.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -3,3 +3,4 @@
 /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/FleetState.idl
 /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:srv/StartCalibration.idl
 /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/CalibrationStatus.idl
+/home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_adapter/aether_interfaces:msg/DeconflictionWarning.idl

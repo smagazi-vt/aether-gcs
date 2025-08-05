@@ -91,6 +91,11 @@ CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/de
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__struct.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/deconfliction_warning.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__builder.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__struct.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__traits.hpp
+CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__type_support.hpp
 CMakeFiles/aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -113,6 +118,7 @@ rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/ae
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/FleetState.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/srv/StartCalibration.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/CalibrationStatus.idl
+rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: rosidl_adapter/aether_interfaces/msg/DeconflictionWarning.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -220,12 +226,32 @@ rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp
 rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp
 
+rosidl_generator_cpp/aether_interfaces/msg/deconfliction_warning.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/deconfliction_warning.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__builder.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__builder.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__struct.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__struct.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__traits.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__traits.hpp
+
+rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__type_support.hpp: rosidl_generator_cpp/aether_interfaces/srv/upload_mission.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__type_support.hpp
+
 aether_interfaces__cpp: CMakeFiles/aether_interfaces__cpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/calibration_status.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/deconfliction_warning.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__builder.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__struct.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__traits.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/calibration_status__type_support.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__builder.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__struct.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__traits.hpp
+aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/deconfliction_warning__type_support.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__builder.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__struct.hpp
 aether_interfaces__cpp: rosidl_generator_cpp/aether_interfaces/msg/detail/drone_state__traits.hpp

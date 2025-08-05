@@ -9,7 +9,6 @@ def generate_launch_description():
     """
     
     # Get the path to the drone_profiles.yaml configuration file
-    # This ensures that the path is correct no matter where the workspace is located.
     config_file_path = os.path.join(
         get_package_share_directory('aether_gcs_backend'),
         'config',
@@ -19,10 +18,8 @@ def generate_launch_description():
     # --- Node Definitions ---
 
     # 1. The Fleet Manager Node
-    # This node discovers and tracks the state of all drones.
     fleet_manager_node = Node(
         package='aether_gcs_backend',
-        # This executable name must match the entry_point in your setup.py
         executable='fleet_manager',
         name='fleet_manager_node',
         output='screen',
@@ -30,20 +27,26 @@ def generate_launch_description():
     )
 
     # 2. The Mission Planner Backend Node
-    # This node provides the service for uploading mission files.
     mission_planner_node = Node(
         package='aether_gcs_backend',
-        # This executable name must match the entry_point in your setup.py
         executable='mission_planner',
         name='mission_planner_backend_node',
         output='screen'
     )
+    
+    # 3. The Calibration Manager Node (NEWLY ADDED)
+    # This node provides the service for starting and monitoring sensor calibrations.
+    calibration_manager_node = Node(
+        package='aether_gcs_backend',
+        executable='calibration_manager',
+        name='calibration_manager_node',
+        output='screen'
+    )
 
-    # 3. The Collision Avoider Node (C++)
-    # For the MVP/demo, this runs on the GCS. In the final architecture,
-    # it would be moved to the onboard.launch.py file.
+    # 4. The Collision Avoider Node (C++)
+    # For the MVP/demo, this runs on the GCS.
     collision_avoider_node = Node(
-        package='valtec_onboard_intelligence', # The package where the C++ node lives
+        package='valtec_onboard_intelligence',
         executable='collision_avoider_node',
         name='collision_avoider_node',
         output='screen'
@@ -54,5 +57,6 @@ def generate_launch_description():
     return LaunchDescription([
         fleet_manager_node,
         mission_planner_node,
+        calibration_manager_node,
         collision_avoider_node
     ])

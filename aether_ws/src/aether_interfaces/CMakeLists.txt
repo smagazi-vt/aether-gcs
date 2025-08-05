@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FleetState.msg"
   "srv/StartCalibration.srv"
   "msg/CalibrationStatus.msg"
+  "msg/DeconflictionWarning.msg"
   DEPENDENCIES std_msgs
 )
 

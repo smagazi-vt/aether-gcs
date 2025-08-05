@@ -139,13 +139,28 @@ CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c -o CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.s
 
+CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o: rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c
+CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o -MF CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o.d -o CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o -c /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c
+
+CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c > CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.i
+
+CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c -o CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.s
+
 # Object files for target aether_interfaces__rosidl_generator_py
 aether_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c.o" \
 "CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_drone_state_s.c.o" \
 "CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.c.o" \
 "CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.o" \
-"CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o"
+"CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o" \
+"CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o"
 
 # External object files for target aether_interfaces__rosidl_generator_py
 aether_interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
@@ -155,6 +170,7 @@ rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.c.o
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c.o
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c.o
+rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c.o
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/build.make
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: libaether_interfaces__rosidl_typesupport_c.so
@@ -169,7 +185,7 @@ rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so: CMakeFiles/aether_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library rosidl_generator_py/aether_interfaces/libaether_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aether_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -74,6 +74,7 @@ aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aeth
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_fleet_state.py
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/srv/_start_calibration.py
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_calibration_status.py
+aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning.py
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/srv/__init__.py
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/__init__.py
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/srv/_upload_mission_s.c
@@ -81,6 +82,7 @@ aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aeth
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_fleet_state_s.c
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c
 aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c
+aether_interfaces__py/CMakeFiles/aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c
 
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -100,6 +102,7 @@ rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/aether_interfaces/msg/FleetState.idl
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/aether_interfaces/srv/StartCalibration.idl
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/aether_interfaces/msg/CalibrationStatus.idl
+rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/aether_interfaces/msg/DeconflictionWarning.idl
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -156,6 +159,9 @@ rosidl_generator_py/aether_interfaces/srv/_start_calibration.py: rosidl_generato
 rosidl_generator_py/aether_interfaces/msg/_calibration_status.py: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/aether_interfaces/msg/_calibration_status.py
 
+rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning.py: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning.py
+
 rosidl_generator_py/aether_interfaces/srv/__init__.py: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/aether_interfaces/srv/__init__.py
 
@@ -177,6 +183,9 @@ rosidl_generator_py/aether_interfaces/srv/_start_calibration_s.c: rosidl_generat
 rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c
 
+rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c
+
 aether_interfaces__py: aether_interfaces__py/CMakeFiles/aether_interfaces__py
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_c.c
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/_aether_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -184,6 +193,8 @@ aether_interfaces__py: rosidl_generator_py/aether_interfaces/_aether_interfaces_
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/__init__.py
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_calibration_status.py
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_calibration_status_s.c
+aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning.py
+aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_deconfliction_warning_s.c
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_drone_state.py
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_drone_state_s.c
 aether_interfaces__py: rosidl_generator_py/aether_interfaces/msg/_fleet_state.py
