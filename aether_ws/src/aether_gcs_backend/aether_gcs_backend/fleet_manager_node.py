@@ -84,7 +84,7 @@ class FleetManagerNode(Node):
         """Scans for new drone topics and adds them to the pending list."""
         self.get_logger().debug("Scanning for new drones...")
         topic_names_and_types = self.get_topic_names_and_types()
-        state_topic_pattern = re.compile(r'/(drone\d+)(?:/mavros)?/state')
+        state_topic_pattern = re.compile(r'/(drone\d+)/mavros/state')
 
         for topic_name, _ in topic_names_and_types:
             match = state_topic_pattern.match(topic_name)

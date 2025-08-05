@@ -53,6 +53,9 @@ private:
     void discover_drones()
     {
         auto topic_names_and_types = this->get_topic_names_and_types();
+        // FUTURE IMPROVEMENT: THE ODOMETRY TOPIC NAME SHOULD BE PULLED FROM THE
+        // DRONE PROFILE YAML, SIMILAR TO THE FLEET MANAGER. FOR THIS MVP,
+        // WE WILL HARDCODE THE EXPECTED TOPIC NAME.
         std::regex odom_topic_regex(R"(/drone(\d+)/mavros/global_position/local)");
 
         for (const auto& topic_pair : topic_names_and_types) {
