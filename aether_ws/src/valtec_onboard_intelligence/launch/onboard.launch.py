@@ -6,21 +6,20 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node, PushRosNamespace
 
 def generate_launch_description():
-    # This argument defines the unique MAVLink System ID for THIS specific drone.
-    # You MUST set this to a different number for each drone (e.g., 1, 2, 3).
+    # MAVLink System ID for this specific drone.
     system_id_arg = DeclareLaunchArgument(
         'system_id',
         default_value='1',
         description='The MAVLink System ID of this vehicle.'
     )
 
-    # This defines the serial port and baud rate for the connection.
-    # '/dev/ttyAMA0' is a common default for the Raspberry Pi's GPIO UART.
-    # YOU MUST VERIFY THIS on your physical hardware.
+    # --- THIS IS THE CRITICAL FIX ---
+    # We are changing the connection URL to use a more reliable TCP connection
+    # for the SITL simulation. The PX4 simulator listens on TCP port 4560.
     fcu_url_arg = DeclareLaunchArgument(
         'fcu_url',
-        default_value='/dev/ttyAMA0:921600',
-        description='The connection URL for the flight controller.'
+        default_value='tcp://localhost:4560',
+        description='The connection URL for the flight controller (SITL).'
     )
 
     # Get the path to the default MAVROS config file
@@ -28,23 +27,20 @@ def generate_launch_description():
         get_package_share_directory('mavros'), 'launch', 'px4_config.yaml'
     )
 
-    # This action group allows us to push all nodes within it into a namespace
     namespaced_group = GroupAction(
         actions=[
-            # --- THIS IS THE CRITICAL FIX ---
-            # This pushes all enclosed nodes into a namespace like "drone1"
             PushRosNamespace(['drone', LaunchConfiguration('system_id')]),
 
-            # MAVROS Node
             Node(
                 package='mavros',
                 executable='mavros_node',
-                name='mavros', # The node name will be automatically namespaced
+                name='mavros',
                 output='screen',
                 parameters=[
                     mavros_config_path,
                     {
                         'fcu_url': LaunchConfiguration('fcu_url'),
+                        'fcu_protocol': 'v2.0',
                         'gcs_url': '', 
                         'tgt_system': 1,
                         'tgt_component': 1,
@@ -53,8 +49,6 @@ def generate_launch_description():
                     }
                 ]
             ),
-            
-            # FUTURE IMPROVEMENT: THE ONBOARD COLLISION AVOIDER NODE WOULD BE LAUNCHED HERE
         ]
     )
 
