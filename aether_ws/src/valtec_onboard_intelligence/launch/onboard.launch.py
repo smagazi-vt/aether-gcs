@@ -40,6 +40,9 @@ def generate_launch_description():
                     mavros_config_path,
                     {
                         'fcu_url': LaunchConfiguration('fcu_url'),
+                        # --- THIS IS THE SECOND PART OF THE FIX ---
+                        # We explicitly tell MAVROS to use the MAVLink v2.0 protocol.
+                        # This helps avoid version detection timeouts.
                         'fcu_protocol': 'v2.0',
                         'gcs_url': '', 
                         'tgt_system': 1,
