@@ -1,0 +1,2 @@
+Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': /usr/bin/cmake /home/valtec/aether/aether_ws/src/valtec_onboard_intelligence -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence
+Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '1': /usr/bin/cmake /home/valtec/aether/aether_ws/src/valtec_onboard_intelligence -DCMAKE_INSTALL_PREFIX=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence

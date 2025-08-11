@@ -1,1 +1,0 @@
-/home/valtec/aether/aether_ws/src/aether_gcs_backend/launch/gcs_backend.launch.py

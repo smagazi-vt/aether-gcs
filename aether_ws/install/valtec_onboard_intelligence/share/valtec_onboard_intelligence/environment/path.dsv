@@ -1,1 +1,1 @@
-/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence/ament_cmake_environment_hooks/path.dsv
+prepend-non-duplicate-if-exists;PATH;bin

@@ -1,3 +1,0 @@
-[console_scripts]
-aether_ui = aether_gcs_ui.main_window_node:main
-
