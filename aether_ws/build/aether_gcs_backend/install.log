@@ -1,8 +1,10 @@
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__init__.py
+/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/mock_intruder_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/mission_planner_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/swarm_coordinator_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/fleet_manager_node.py
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/__init__.cpython-310.pyc
+/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/mock_intruder_node.cpython-310.pyc
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/mission_planner_node.cpython-310.pyc
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/swarm_coordinator_node.cpython-310.pyc
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__pycache__/fleet_manager_node.cpython-310.pyc
@@ -20,4 +22,5 @@
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/calibration_manager
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/fleet_manager
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/mission_planner
+/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/mock_intruder
 /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend/swarm_coordinator

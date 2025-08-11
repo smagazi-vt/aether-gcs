@@ -30,6 +30,7 @@ setup(
             'mission_planner = aether_gcs_backend.mission_planner_node:main',
             'calibration_manager = aether_gcs_backend.calibration_manager_node:main',
             'swarm_coordinator = aether_gcs_backend.swarm_coordinator_node:main',
+            'mock_intruder = aether_gcs_backend.nodes.mock_intruder_node:main',
         ],
     },
 )

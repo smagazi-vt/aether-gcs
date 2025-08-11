@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/PKG-INFO
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/SOURCES.txt
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/dependency_links.txt
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/entry_points.txt
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/requires.txt
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/top_level.txt
+../../build/aether_gcs_ui/aether_gcs_ui.egg-info/zip-safe
+aether_gcs_ui/__init__.py
+aether_gcs_ui/main_window_node.py
+resource/aether_gcs_ui
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

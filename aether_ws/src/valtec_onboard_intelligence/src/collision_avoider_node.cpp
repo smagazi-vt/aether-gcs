@@ -9,9 +9,8 @@
  */
 
 #include <rclcpp/rclcpp.hpp>
-#include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/twist_stamped.hpp>
-#include <nav_msgs/msg/odometry.hpp> // A better source for position + velocity
+#include <nav_msgs/msg/odometry.hpp>
 #include <vector>
 #include <string>
 #include <cmath>
@@ -19,7 +18,6 @@
 #include <set>
 #include <regex>
 #include <tf2/LinearMath/Vector3.h>
-#include <tf2/LinearMath/Quaternion.h>
 
 // Using statements for brevity
 using namespace std::chrono_literals;
@@ -55,11 +53,13 @@ public:
         velocity_publisher_ = this->create_publisher<geometry_msgs::msg::TwistStamped>(vel_topic, 10);
 
         // Subscriber to our own odometry (position + velocity)
-        std::string own_odom_topic = "/drone" + std::to_string(own_id_) + "/mavros/global_position/local"; // Example topic
+        // FUTURE IMPROVEMENT: THE ODOMETRY TOPIC NAME SHOULD BE CONFIGURABLE.
+        std::string own_odom_topic = "/drone" + std::to_string(own_id_) + "/mavros/global_position/local";
         own_odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
             own_odom_topic, 10,
             [this](const nav_msgs::msg::Odometry::SharedPtr msg) {
                 this->own_odom_ = *msg;
+                this->own_odom_received_ = true;
             });
 
         // Timer to periodically discover new drones
@@ -103,15 +103,19 @@ private:
 
     void calculate_and_avoid()
     {
+        if (!own_odom_received_) {
+            return; // Don't do anything until we have our own position
+        }
+
         tf2::Vector3 own_pos(own_odom_.pose.pose.position.x, own_odom_.pose.pose.position.y, own_odom_.pose.pose.position.z);
         tf2::Vector3 own_vel(own_odom_.twist.twist.linear.x, own_odom_.twist.twist.linear.y, own_odom_.twist.twist.linear.z);
 
-        // For this MVP, we assume the desired velocity is the current velocity.
+        // FOR THE MVP, WE ASSUME THE DESIRED VELOCITY IS THE CURRENT VELOCITY.
         // FUTURE IMPROVEMENT: A MORE ADVANCED IMPLEMENTATION WOULD SUBSCRIBE TO THE
-        // MISSION PLANNER'S DESIRED VELOCITY TOPIC.
+        // MISSION PLANNER'S DESIRED VELOCITY TOPIC TO BE MORE PROACTIVE.
         tf2::Vector3 desired_vel = own_vel;
-
         tf2::Vector3 avoidance_vel = desired_vel;
+        bool collision_imminent = false;
 
         for (auto const& [id, drone_info] : fleet_info_)
         {
@@ -124,37 +128,38 @@ private:
             tf2::Vector3 relative_pos = intruder_pos - own_pos;
             tf2::Vector3 relative_vel = own_vel - intruder_vel;
 
-            // Calculate the collision cone
             double dist_sq = relative_pos.length2();
-            if (dist_sq > (SAFETY_RADIUS * TIME_HORIZON) * (SAFETY_RADIUS * TIME_HORIZON)) continue; // Too far to be a threat
+            if (dist_sq == 0.0) continue; // Avoid division by zero
 
-            double apex_angle = asin(SAFETY_RADIUS / relative_pos.length());
+            // Calculate the collision cone (simplified 2D for this MVP)
+            double combined_radius = SAFETY_RADIUS;
+            double apex_angle = asin(combined_radius / relative_pos.length());
             double center_angle = atan2(relative_pos.y(), relative_pos.x());
-
-            // Check if our relative velocity is inside the collision cone
             double vel_angle = atan2(relative_vel.y(), relative_vel.x());
             
             if (std::abs(vel_angle - center_angle) < apex_angle)
             {
+                collision_imminent = true;
                 RCLCPP_WARN(this->get_logger(), "Collision risk with Drone %d! Taking evasive action.", id);
                 
                 // --- ESCAPE MANEUVER LOGIC ---
                 // This is a simple escape logic. It finds the "edge" of the cone
                 // and sets the new velocity there.
                 // FUTURE IMPROVEMENT: A MORE ROBUST IMPLEMENTATION (LIKE RVO or HRVO)
-                // WOULD NEGOTIATE WITH THE OTHER DRONE.
-                double escape_angle = center_angle + (vel_angle > center_angle ? apex_angle : -apex_angle);
+                // WOULD NEGOTIATE WITH THE OTHER DRONE FOR A MORE EFFICIENT MANEUVER.
+                double escape_angle = center_angle + (vel_angle > center_angle ? apex_angle + 0.1 : -apex_angle - 0.1); // Add small margin
                 double vel_mag = relative_vel.length();
 
                 tf2::Vector3 escape_vel_relative(cos(escape_angle) * vel_mag, sin(escape_angle) * vel_mag, relative_vel.z());
                 
                 // Convert back to absolute velocity
                 avoidance_vel = escape_vel_relative + intruder_vel;
+                break; // Handle one collision at a time for simplicity
             }
         }
 
-        // If the avoidance velocity is different from our desired velocity, publish the override.
-        if (avoidance_vel.distance2(desired_vel) > 0.01) {
+        // If a collision was detected, publish the override command.
+        if (collision_imminent) {
             publish_velocity_command(avoidance_vel);
         }
     }
@@ -173,6 +178,7 @@ private:
     // Member variables
     int own_id_;
     nav_msgs::msg::Odometry own_odom_;
+    bool own_odom_received_ = false;
     std::map<int, DroneInfo> fleet_info_;
     std::set<int> discovered_drones_;
     

@@ -1,4 +1,5 @@
 /home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/lib/valtec_onboard_intelligence/collision_avoider_node
+/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence//launch/onboard.launch.py
 /home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/ament_index/resource_index/package_run_dependencies/valtec_onboard_intelligence
 /home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/ament_index/resource_index/parent_prefix_path/valtec_onboard_intelligence
 /home/valtec/aether/aether_ws/install/valtec_onboard_intelligence/share/valtec_onboard_intelligence/environment/ament_prefix_path.sh
