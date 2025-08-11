@@ -45,7 +45,7 @@ class FleetManagerNode(Node):
     """
     def __init__(self):
         super().__init__('fleet_manager_node')
-        self.get_logger().info("--- Aether GCS Fleet Manager Starting (Robust & Async Mode) ---")
+        self.get_logger().info("--- Aether GCS Fleet Manager Starting (Hardcoded Path Mode) ---")
         
         self.declare_parameter('drone_profiles_path', '')
         profiles_path = self.get_parameter('drone_profiles_path').get_parameter_value().string_value
@@ -85,10 +85,9 @@ class FleetManagerNode(Node):
         topic_names_and_types = self.get_topic_names_and_types()
         
         # --- THIS IS THE CRITICAL FIX ---
-        # This new regex makes the '/mavros' part of the topic name optional.
-        # It will now correctly match both '/drone1/mavros/state' AND '/drone1/state'.
-        # The (?:...) is a non-capturing group.
-        state_topic_pattern = re.compile(r'/(drone\d+)(?:/mavros)?/state')
+        # WE ARE NOW SEARCHING FOR THE EXACT TOPIC STRUCTURE PROVEN BY DIAGNOSTICS.
+        # THIS IS NOT FLEXIBLE, BUT IT IS DEFINITIVE FOR THE CURRENT SETUP.
+        state_topic_pattern = re.compile(r'/(drone\d+)/state')
 
         for topic_name, _ in topic_names_and_types:
             match = state_topic_pattern.match(topic_name)
@@ -109,7 +108,9 @@ class FleetManagerNode(Node):
 
     def identify_drone(self, drone_id, drone_namespace, state_topic_name):
         """Sends a single identification request for a drone."""
-        # This service name is correct based on your ros2 service list output
+        # --- THIS IS THE CRITICAL FIX ---
+        # WE ARE NOW CONSTRUCTING THE EXACT SERVICE NAME PROVEN BY DIAGNOSTICS.
+        # THIS REMOVES ALL GUESSWORK.
         service_name = f'/{drone_namespace}/mavros/param/get'
         
         if drone_id not in self.param_clients:
@@ -118,7 +119,7 @@ class FleetManagerNode(Node):
         client = self.param_clients[drone_id]
 
         if not client.service_is_ready():
-            self.get_logger().warn(f"Parameter service for Drone {drone_id} not yet available. Will retry.")
+            self.get_logger().warn(f"Parameter service '{service_name}' for Drone {drone_id} not yet available. Will retry.")
             return
 
         if drone_id in self.pending_identification:

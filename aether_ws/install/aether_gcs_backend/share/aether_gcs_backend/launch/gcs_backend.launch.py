@@ -38,12 +38,17 @@ def generate_launch_description():
         output='screen'
     )
 
-    # --- NEWLY ADDED STRATEGIC DECONFLICTION NODE ---
-    # This C++ node runs on the GCS to provide high-level warnings.
     strategic_deconfliction_node = Node(
         package='aether_gcs_logic_cpp', # The new C++ package
         executable='strategic_deconfliction_node',
         name='strategic_deconfliction_node',
+        output='screen'
+    )
+
+    swarm_coordinator_node = Node(
+        package='aether_gcs_backend',
+        executable='swarm_coordinator',
+        name='swarm_coordinator_node',
         output='screen'
     )
 
@@ -52,5 +57,6 @@ def generate_launch_description():
         fleet_manager_node,
         mission_planner_node,
         calibration_manager_node,
-        strategic_deconfliction_node # <-- ADDED THIS NODE
+        strategic_deconfliction_node,
+        swarm_coordinator_node
     ])

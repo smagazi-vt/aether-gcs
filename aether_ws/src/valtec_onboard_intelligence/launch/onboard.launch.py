@@ -18,7 +18,7 @@ def generate_launch_description():
     # for the SITL simulation. The PX4 simulator listens on TCP port 4560.
     fcu_url_arg = DeclareLaunchArgument(
         'fcu_url',
-        default_value='tcp://localhost:4560',
+        default_value='udp://:14540@localhost:14557',
         description='The connection URL for the flight controller (SITL).'
     )
 
@@ -44,7 +44,7 @@ def generate_launch_description():
                         # We explicitly tell MAVROS to use the MAVLink v2.0 protocol.
                         # This helps avoid version detection timeouts.
                         'fcu_protocol': 'v2.0',
-                        'gcs_url': '', 
+                        'gcs_url': 'udp://@127.0.0.1:14550', 
                         'tgt_system': 1,
                         'tgt_component': 1,
                         'system_id': LaunchConfiguration('system_id'),

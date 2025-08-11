@@ -29,6 +29,7 @@ setup(
             'fleet_manager = aether_gcs_backend.fleet_manager_node:main',
             'mission_planner = aether_gcs_backend.mission_planner_node:main',
             'calibration_manager = aether_gcs_backend.calibration_manager_node:main',
+            'swarm_coordinator = aether_gcs_backend.swarm_coordinator_node:main',
         ],
     },
 )

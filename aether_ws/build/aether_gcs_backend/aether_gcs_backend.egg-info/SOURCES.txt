@@ -12,6 +12,7 @@ aether_gcs_backend/__init__.py
 aether_gcs_backend/calibration_manager_node.py
 aether_gcs_backend/fleet_manager_node.py
 aether_gcs_backend/mission_planner_node.py
+aether_gcs_backend/swarm_coordinator_node.py
 config/drone_profiles.yaml
 launch/gcs_backend.launch.py
 resource/aether_gcs_backend

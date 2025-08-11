@@ -3,20 +3,20 @@
 import sys
 import rclpy
 from rclpy.node import Node
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
                              QLabel, QTableWidget, QTableWidgetItem, QPushButton, 
                              QFileDialog, QHeaderView, QComboBox, QMessageBox)
 from PyQt6.QtCore import QTimer
 from PyQt6.QtGui import QAction
 
 from aether_interfaces.srv import UploadMission, StartCalibration
-from aether_interfaces.msg import FleetState, DeconflictionWarning # IMPORT THE NEW WARNING MESSAGE
+from aether_interfaces.msg import FleetState, DeconflictionWarning
+from std_srvs.srv import Trigger # IMPORT FOR SIMPLE SWARM COMMANDS
 from .calibration_wizard import CalibrationWizard
 
 class GCSMainWindow(QMainWindow, Node):
     """
     The main graphical user interface for the Aether GCS.
-    It subscribes to the centralized fleet state topic for all its data.
     """
     def __init__(self):
         # The correct way to initialize multiple inheritance with required args:
@@ -42,7 +42,6 @@ class GCSMainWindow(QMainWindow, Node):
         self.setWindowTitle("Aether GCS")
         self.setGeometry(100, 100, 800, 600)
 
-        # --- Data Storage ---
         self.fleet_state = {}
 
         # --- UI Elements ---
@@ -69,34 +68,61 @@ class GCSMainWindow(QMainWindow, Node):
         self.fleet_table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.layout.addWidget(self.fleet_table)
 
-        self.mission_label = QLabel("Mission Control")
+        # --- Individual Mission Control ---
+        self.mission_label = QLabel("Individual Mission Control")
         self.layout.addWidget(self.mission_label)
         
         self.drone_selector = QComboBox()
         self.layout.addWidget(self.drone_selector)
 
-        self.upload_button = QPushButton("Upload Mission Plan...")
+        self.upload_button = QPushButton("Upload Mission Plan to Selected Drone...")
         self.upload_button.clicked.connect(self.on_upload_mission)
         self.layout.addWidget(self.upload_button)
+        
+        # --- NEW: Swarm Command Section ---
+        self.swarm_label = QLabel("Swarm Command")
+        font = self.swarm_label.font()
+        font.setPointSize(16)
+        self.swarm_label.setFont(font)
+        self.layout.addWidget(self.swarm_label)
+
+        # Create a horizontal layout for the swarm buttons
+        self.swarm_button_layout = QHBoxLayout()
+        self.arm_swarm_button = QPushButton("Arm All")
+        self.takeoff_swarm_button = QPushButton("Takeoff All")
+        self.land_swarm_button = QPushButton("Land All")
+        self.rtl_swarm_button = QPushButton("RTL All")
+        
+        self.swarm_button_layout.addWidget(self.arm_swarm_button)
+        self.swarm_button_layout.addWidget(self.takeoff_swarm_button)
+        self.swarm_button_layout.addWidget(self.land_swarm_button)
+        self.swarm_button_layout.addWidget(self.rtl_swarm_button)
+        
+        # Add the horizontal layout to the main vertical layout
+        self.layout.addLayout(self.swarm_button_layout)
+
+        # Connect swarm buttons to their functions
+        self.arm_swarm_button.clicked.connect(self.on_swarm_arm)
+        self.takeoff_swarm_button.clicked.connect(self.on_swarm_takeoff)
+        self.land_swarm_button.clicked.connect(self.on_swarm_land)
+        self.rtl_swarm_button.clicked.connect(self.on_swarm_rtl)
+
 
         # --- ROS 2 Integration ---
         self.upload_mission_client = self.create_client(UploadMission, '/aether/upload_mission')
         self.start_calibration_client = self.create_client(StartCalibration, '/aether/start_calibration')
+        
+        # --- NEW: Clients for swarm services ---
+        self.swarm_arm_client = self.create_client(Trigger, '/aether/swarm_arm')
+        self.swarm_takeoff_client = self.create_client(Trigger, '/aether/swarm_takeoff')
+        self.swarm_land_client = self.create_client(Trigger, '/aether/swarm_land')
+        self.swarm_rtl_client = self.create_client(Trigger, '/aether/swarm_rtl') # Assuming you will create an RTL service
 
         self.fleet_state_subscriber = self.create_subscription(
-            FleetState,
-            '/aether/fleet_state',
-            self.fleet_state_callback,
-            10
-        )
+            FleetState, '/aether/fleet_state', self.fleet_state_callback, 10)
 
-        # --- NEW: Subscriber for deconfliction warnings ---
         self.deconfliction_subscriber = self.create_subscription(
-            DeconflictionWarning,
-            '/aether/deconfliction_warnings',
-            self.deconfliction_warning_callback,
-            10
-        )
+            DeconflictionWarning, '/aether/deconfliction_warnings', self.deconfliction_warning_callback, 10)
 
         self.ros_timer = QTimer(self)
         self.ros_timer.timeout.connect(self.spin_ros)
@@ -112,10 +138,8 @@ class GCSMainWindow(QMainWindow, Node):
         new_state = {}
         for drone_msg in msg.drones:
             new_state[drone_msg.system_id] = {
-                "id": drone_msg.system_id,
-                "firmware": drone_msg.firmware_type,
-                "mode": drone_msg.flight_mode,
-                "armed": drone_msg.is_armed
+                "id": drone_msg.system_id, "firmware": drone_msg.firmware_type,
+                "mode": drone_msg.flight_mode, "armed": drone_msg.is_armed
             }
         
         if set(new_state.keys()) != set(self.fleet_state.keys()):
@@ -127,18 +151,14 @@ class GCSMainWindow(QMainWindow, Node):
     def deconfliction_warning_callback(self, msg):
         """Displays a pop-up warning when a deconfliction message is received."""
         self.get_logger().warn(f"Received deconfliction warning: {msg.warning_text}")
-        QMessageBox.critical(
-            self, 
-            "Strategic Conflict Warning", 
+        QMessageBox.critical(self, "Strategic Conflict Warning", 
             f"Conflict detected between Drone {msg.drone_id_1} and Drone {msg.drone_id_2}!\n\n"
-            f"Details: {msg.warning_text}"
-        )
+            f"Details: {msg.warning_text}")
 
     def update_fleet_table(self):
         """Redraws the fleet status table with the latest data."""
         self.fleet_table.setRowCount(len(self.fleet_state))
         sorted_drones = sorted(self.fleet_state.values(), key=lambda d: d['id'])
-
         for row, drone in enumerate(sorted_drones):
             self.fleet_table.setItem(row, 0, QTableWidgetItem(str(drone['id'])))
             self.fleet_table.setItem(row, 1, QTableWidgetItem(drone['firmware']))
@@ -160,33 +180,9 @@ class GCSMainWindow(QMainWindow, Node):
             return
 
         file_path, _ = QFileDialog.getOpenFileName(self, "Open Mission Plan", "", "Mission Plan Files (*.plan)")
-
         if file_path:
-            if not self.upload_mission_client.wait_for_service(timeout_sec=1.0):
-                self.get_logger().error("Mission upload service not available.")
-                QMessageBox.critical(self, "Service Error", "The mission upload service is not available. Is the backend running?")
-                return
-
-            request = UploadMission.Request()
-            request.target_system_id = selected_drone_id
-            request.file_path = file_path
-            
-            self.get_logger().info(f"UI sending request to upload {file_path} to Drone {selected_drone_id}")
-            future = self.upload_mission_client.call_async(request)
-            future.add_done_callback(self.on_upload_response)
-
-    def on_upload_response(self, future):
-        """Handles the response from the mission upload service."""
-        try:
-            response = future.result()
-            self.get_logger().info(f"Mission upload response: Success={response.success}, Message='{response.message}'")
-            if response.success:
-                QMessageBox.information(self, "Mission Upload", f"Mission upload initiated successfully!\n\n{response.message}")
-            else:
-                QMessageBox.critical(self, "Mission Upload Failed", f"The mission upload failed.\n\nReason: {response.message}")
-        except Exception as e:
-            self.get_logger().error(f"Service call failed: {e}")
-            QMessageBox.critical(self, "Service Error", f"An exception occurred during the service call:\n{e}")
+            self.call_service(self.upload_mission_client, UploadMission.Request(
+                target_system_id=selected_drone_id, file_path=file_path), "Mission Upload")
 
     def on_calibrate_accel(self):
         """Handles the 'Calibrate Accelerometer' menu action."""
@@ -194,37 +190,51 @@ class GCSMainWindow(QMainWindow, Node):
         if selected_drone_id is None:
             QMessageBox.warning(self, "Selection Error", "No drone selected for calibration.")
             return
-
-        if not self.start_calibration_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error("Start calibration service not available.")
-            QMessageBox.critical(self, "Service Error", "The calibration service is not available. Is the backend running?")
-            return
-
+        
         self.wizard = CalibrationWizard(self, selected_drone_id)
-        
-        request = StartCalibration.Request()
-        request.target_system_id = selected_drone_id
-        request.sensor_type = "accel"
-        
-        self.get_logger().info(f"UI sending request to start accelerometer calibration for Drone {selected_drone_id}")
-        future = self.start_calibration_client.call_async(request)
-        future.add_done_callback(self.on_start_calibration_response)
-
+        self.call_service(self.start_calibration_client, StartCalibration.Request(
+            target_system_id=selected_drone_id, sensor_type="accel"), "Start Calibration")
         self.wizard.exec()
 
-    def on_start_calibration_response(self, future):
-        """Handles the response after requesting to start a calibration."""
+    # --- NEW: Swarm Command Functions ---
+    def on_swarm_arm(self):
+        self.get_logger().info("UI sending ARM SWARM command.")
+        self.call_service(self.swarm_arm_client, Trigger.Request(), "Arm Swarm")
+
+    def on_swarm_takeoff(self):
+        self.get_logger().info("UI sending TAKEOFF SWARM command.")
+        self.call_service(self.swarm_takeoff_client, Trigger.Request(), "Takeoff Swarm")
+
+    def on_swarm_land(self):
+        self.get_logger().info("UI sending LAND SWARM command.")
+        self.call_service(self.swarm_land_client, Trigger.Request(), "Land Swarm")
+
+    def on_swarm_rtl(self):
+        self.get_logger().info("UI sending RTL SWARM command.")
+        self.call_service(self.swarm_rtl_client, Trigger.Request(), "RTL Swarm")
+
+    def call_service(self, client, request, service_name):
+        """A generic helper function to call a service and handle the response."""
+        if not client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().error(f"{service_name} service not available.")
+            QMessageBox.critical(self, "Service Error", f"The {service_name} service is not available.")
+            return
+
+        future = client.call_async(request)
+        future.add_done_callback(lambda fut: self.service_response_callback(fut, service_name))
+
+    def service_response_callback(self, future, service_name):
+        """A generic callback to show the result of a service call in a pop-up."""
         try:
             response = future.result()
-            if not response.success:
-                self.get_logger().error(f"Backend failed to start calibration: {response.message}")
-                QMessageBox.critical(self, "Calibration Error", f"Could not start calibration.\n\nReason: {response.message}")
-                if hasattr(self, 'wizard') and self.wizard.isVisible():
-                    self.wizard.reject()
+            self.get_logger().info(f"{service_name} response: Success={response.success}, Message='{response.message}'")
+            if response.success:
+                QMessageBox.information(self, f"{service_name} Succeeded", f"Command sent successfully!\n\n{response.message}")
+            else:
+                QMessageBox.critical(self, f"{service_name} Failed", f"The command failed.\n\nReason: {response.message}")
         except Exception as e:
-            self.get_logger().error(f"Service call to start calibration failed: {e}")
-            if hasattr(self, 'wizard') and self.wizard.isVisible():
-                self.wizard.reject()
+            self.get_logger().error(f"Service call for {service_name} failed: {e}")
+            QMessageBox.critical(self, "Service Error", f"An exception occurred during the {service_name} call:\n{e}")
 
 def main(args=None):
     rclpy.init(args=args)

@@ -5,7 +5,7 @@
  * Velocity Obstacles (VO) algorithm for real-time, decentralized collision avoidance.
  *
  * AUTHOR: Valtec
- * DATE: 2025-08-05
+ * DATE: 2025-08-12
  */
 
 #include <rclcpp/rclcpp.hpp>
