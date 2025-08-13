@@ -13,7 +13,7 @@ def generate_launch_description():
         description='The MAVLink System ID of this vehicle.'
     )
 
-    # The serial port and baud rate for the connection to the Pixhawk.
+    # TODO: The serial port and baud rate for the connection to the Pixhawk.
     # YOU MUST VERIFY THIS on your physical hardware.
     fcu_url_arg = DeclareLaunchArgument(
         'fcu_url',

@@ -45,7 +45,7 @@ class FleetManagerNode(Node):
     """
     def __init__(self):
         super().__init__('fleet_manager_node')
-        self.get_logger().info("--- Aether GCS Fleet Manager Starting (Hardcoded Path Mode) ---")
+        self.get_logger().info("--- Aether GCS Fleet Manager Starting (Robust & Async Mode) ---")
         
         self.declare_parameter('drone_profiles_path', '')
         profiles_path = self.get_parameter('drone_profiles_path').get_parameter_value().string_value
@@ -67,9 +67,10 @@ class FleetManagerNode(Node):
         self.param_clients = {}
         self.active_subscriptions = {}
         
-        self.discovered_drones = set()
-        self.pending_identification = {}
-        self.active_drones = set()
+        # --- Separate lists for managing the drone lifecycle to prevent race conditions ---
+        self.discovered_drones = set() # All drone IDs ever seen
+        self.pending_identification = {} # Drones waiting for firmware ID {id: (namespace, topic_name)}
+        self.active_drones = set() # Drones that have been fully identified and set up
 
         self.fleet_state_publisher = self.create_publisher(FleetState, '/aether/fleet_state', 10)
 
@@ -83,11 +84,7 @@ class FleetManagerNode(Node):
         """Scans for new drone topics and adds them to the pending list."""
         self.get_logger().debug("Scanning for new drones...")
         topic_names_and_types = self.get_topic_names_and_types()
-        
-        # --- THIS IS THE CRITICAL FIX ---
-        # WE ARE NOW SEARCHING FOR THE EXACT TOPIC STRUCTURE PROVEN BY DIAGNOSTICS.
-        # THIS IS NOT FLEXIBLE, BUT IT IS DEFINITIVE FOR THE CURRENT SETUP.
-        state_topic_pattern = re.compile(r'/(drone\d+)/state')
+        state_topic_pattern = re.compile(r'/(drone\d+)/mavros/state')
 
         for topic_name, _ in topic_names_and_types:
             match = state_topic_pattern.match(topic_name)
@@ -102,15 +99,13 @@ class FleetManagerNode(Node):
 
     def process_pending_identifications(self):
         """Periodically tries to identify all drones in the pending queue."""
+        # Iterate over a copy of the items to allow modification during iteration
         for drone_id, (drone_namespace, state_topic_name) in list(self.pending_identification.items()):
             self.get_logger().debug(f"Attempting to identify pending drone: {drone_id}")
             self.identify_drone(drone_id, drone_namespace, state_topic_name)
 
     def identify_drone(self, drone_id, drone_namespace, state_topic_name):
         """Sends a single identification request for a drone."""
-        # --- THIS IS THE CRITICAL FIX ---
-        # WE ARE NOW CONSTRUCTING THE EXACT SERVICE NAME PROVEN BY DIAGNOSTICS.
-        # THIS REMOVES ALL GUESSWORK.
         service_name = f'/{drone_namespace}/mavros/param/get'
         
         if drone_id not in self.param_clients:
@@ -119,9 +114,11 @@ class FleetManagerNode(Node):
         client = self.param_clients[drone_id]
 
         if not client.service_is_ready():
-            self.get_logger().warn(f"Parameter service '{service_name}' for Drone {drone_id} not yet available. Will retry.")
+            self.get_logger().warn(f"Parameter service for Drone {drone_id} not yet available. Will retry.")
             return
 
+        # Once the service is ready, we can remove it from the pending list
+        # so we don't keep trying to call the service.
         if drone_id in self.pending_identification:
             del self.pending_identification[drone_id]
 

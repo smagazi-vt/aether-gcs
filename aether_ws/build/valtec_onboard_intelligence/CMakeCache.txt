@@ -277,6 +277,18 @@ _lib:FILEPATH=/opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.s
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 
+//Value Computed by CMake
+aether_gcs_logic_cpp_BINARY_DIR:STATIC=/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence
+
+//Value Computed by CMake
+aether_gcs_logic_cpp_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+aether_gcs_logic_cpp_SOURCE_DIR:STATIC=/home/valtec/aether/aether_ws/src/valtec_onboard_intelligence
+
+//The directory containing a CMake configuration file for aether_interfaces.
+aether_interfaces_DIR:PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake
+
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 

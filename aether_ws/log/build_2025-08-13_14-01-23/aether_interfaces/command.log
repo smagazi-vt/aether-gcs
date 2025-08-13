@@ -1,0 +1,4 @@
+Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/aether_interfaces -- -j20 -l20
+Invoking command in '/home/valtec/aether/aether_ws/build/aether_interfaces': /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces
+Invoked command in '/home/valtec/aether/aether_ws/build/aether_interfaces' returned '0': /usr/bin/cmake --install /home/valtec/aether/aether_ws/build/aether_interfaces

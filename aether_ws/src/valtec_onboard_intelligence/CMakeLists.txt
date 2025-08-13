@@ -13,8 +13,8 @@ find_package(mavros_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 
-# --- THIS IS THE CRITICAL FIX ---
-# The source file name has been changed to match your existing file.
+# Add the executable for your C++ node
+# NOTE: This uses the filename "collision_avoider_node.cpp" from your GitHub repo
 add_executable(
   collision_avoider_node
   src/collision_avoider_node.cpp

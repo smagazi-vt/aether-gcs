@@ -3,40 +3,34 @@
 import sys
 import rclpy
 from rclpy.node import Node
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
                              QLabel, QTableWidget, QTableWidgetItem, QPushButton, 
-                             QFileDialog, QHeaderView, QComboBox, QMessageBox)
+                             QHeaderView, QMessageBox)
 from PyQt6.QtCore import QTimer
-from PyQt6.QtGui import QAction
 
-from aether_interfaces.srv import UploadMission
 from aether_interfaces.msg import FleetState, DeconflictionWarning
-from std_srvs.srv import Trigger # IMPORT FOR SIMPLE SWARM COMMANDS
+from std_srvs.srv import Trigger
 
 class GCSMainWindow(QMainWindow, Node):
     """
-    The main graphical user interface for the Aether GCS.
-    Focuses on fleet monitoring and swarm command for the MVP.
+    The simplified main graphical user interface for the Aether GCS MVP.
     """
     def __init__(self):
-        # Using super() to initialize the parent classes.
-        # super().__init__(node_name='aether_gcs_ui_node')
-        # QMainWindow.__init__(self)
+        # Initialize both QMainWindow and the ROS 2 Node
         super().__init__(node_name='aether_gcs_ui_node')
-        #Node.__init__(self, 'aether_gcs_ui_node')
 
+        self.setWindowTitle("Aether GCS - MVP")
+        self.setGeometry(100, 100, 800, 400)
 
-        self.setWindowTitle("Aether GCS")
-        self.setGeometry(100, 100, 800, 600)
-
+        # --- Data Storage ---
         self.fleet_state = {}
 
         # --- UI Elements ---
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
         self.layout = QVBoxLayout(self.central_widget)
-        
-        self.title_label = QLabel("Aether Ground Control Station")
+
+        self.title_label = QLabel("Aether GCS - Fleet Monitor")
         font = self.title_label.font()
         font.setPointSize(20)
         self.title_label.setFont(font)
@@ -48,68 +42,36 @@ class GCSMainWindow(QMainWindow, Node):
         self.fleet_table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.layout.addWidget(self.fleet_table)
 
-        # --- Individual Mission Control ---
-        self.mission_label = QLabel("Individual Mission Control")
-        self.layout.addWidget(self.mission_label)
-        
-        self.drone_selector = QComboBox()
-        self.layout.addWidget(self.drone_selector)
-
-        self.upload_button = QPushButton("Upload Mission Plan to Selected Drone...")
-        self.upload_button.clicked.connect(self.on_upload_mission)
-        self.layout.addWidget(self.upload_button)
-        
-        # --- Swarm Command Section ---
-        self.swarm_label = QLabel("Swarm Command")
-        font = self.swarm_label.font()
-        font.setPointSize(16)
-        self.swarm_label.setFont(font)
-        self.layout.addWidget(self.swarm_label)
-
-        # Create a horizontal layout for the swarm buttons
-        self.swarm_button_layout = QHBoxLayout()
-        self.arm_swarm_button = QPushButton("Arm All")
-        self.takeoff_swarm_button = QPushButton("Takeoff All")
-        self.land_swarm_button = QPushButton("Land All")
-        self.rtl_swarm_button = QPushButton("RTL All")
-        
-        self.swarm_button_layout.addWidget(self.arm_swarm_button)
-        self.swarm_button_layout.addWidget(self.takeoff_swarm_button)
-        self.swarm_button_layout.addWidget(self.land_swarm_button)
-        self.swarm_button_layout.addWidget(self.rtl_swarm_button)
-        
-        # Add the horizontal layout to the main vertical layout
-        self.layout.addLayout(self.swarm_button_layout)
-
-        # Connect swarm buttons to their functions
-        self.arm_swarm_button.clicked.connect(self.on_swarm_arm)
-        self.takeoff_swarm_button.clicked.connect(self.on_swarm_takeoff)
-        self.land_swarm_button.clicked.connect(self.on_swarm_land)
-        self.rtl_swarm_button.clicked.connect(self.on_swarm_rtl)
-
+        # --- Mission Control Section ---
+        self.start_mission_button = QPushButton("Start Mission for Drone 1")
+        self.start_mission_button.clicked.connect(self.on_start_mission)
+        self.layout.addWidget(self.start_mission_button)
 
         # --- ROS 2 Integration ---
-        self.upload_mission_client = self.create_client(UploadMission, '/aether/upload_mission')
-        
-        # --- Clients for swarm services ---
-        self.swarm_arm_client = self.create_client(Trigger, '/aether/swarm_arm')
-        self.swarm_takeoff_client = self.create_client(Trigger, '/aether/swarm_takeoff')
-        self.swarm_land_client = self.create_client(Trigger, '/aether/swarm_land')
-        self.swarm_rtl_client = self.create_client(Trigger, '/aether/swarm_rtl')
+        self.start_mission_client = self.create_client(Trigger, '/aether/start_mission')
 
         self.fleet_state_subscriber = self.create_subscription(
-            FleetState, '/aether/fleet_state', self.fleet_state_callback, 10)
+            FleetState,
+            '/aether/fleet_state',
+            self.fleet_state_callback,
+            10
+        )
 
         self.deconfliction_subscriber = self.create_subscription(
-            DeconflictionWarning, '/aether/deconfliction_warnings', self.deconfliction_warning_callback, 10)
+            DeconflictionWarning,
+            '/aether/deconfliction_warnings',
+            self.deconfliction_warning_callback,
+            10
+        )
 
         self.ros_timer = QTimer(self)
         self.ros_timer.timeout.connect(self.spin_ros)
         self.ros_timer.start(100)
 
-        self.get_logger().info("GCS UI Node has started.")
+        self.get_logger().info("GCS UI Node (MVP) has started.")
 
     def spin_ros(self):
+        """Processes one ROS 2 event loop iteration."""
         rclpy.spin_once(self, timeout_sec=0)
 
     def fleet_state_callback(self, msg):
@@ -117,68 +79,40 @@ class GCSMainWindow(QMainWindow, Node):
         new_state = {}
         for drone_msg in msg.drones:
             new_state[drone_msg.system_id] = {
-                "id": drone_msg.system_id, "firmware": drone_msg.firmware_type,
-                "mode": drone_msg.flight_mode, "armed": drone_msg.is_armed
+                "id": drone_msg.system_id,
+                "firmware": drone_msg.firmware_type,
+                "mode": drone_msg.flight_mode,
+                "armed": drone_msg.is_armed
             }
         
-        if set(new_state.keys()) != set(self.fleet_state.keys()):
-            self.update_drone_selector(new_state)
-
         self.fleet_state = new_state
         self.update_fleet_table()
     
     def deconfliction_warning_callback(self, msg):
         """Displays a pop-up warning when a deconfliction message is received."""
         self.get_logger().warn(f"Received deconfliction warning: {msg.warning_text}")
-        QMessageBox.critical(self, "Strategic Conflict Warning", 
+        QMessageBox.critical(
+            self, 
+            "Strategic Conflict Warning", 
             f"Conflict detected between Drone {msg.drone_id_1} and Drone {msg.drone_id_2}!\n\n"
-            f"Details: {msg.warning_text}")
+            f"Details: {msg.warning_text}"
+        )
 
     def update_fleet_table(self):
         """Redraws the fleet status table with the latest data."""
         self.fleet_table.setRowCount(len(self.fleet_state))
         sorted_drones = sorted(self.fleet_state.values(), key=lambda d: d['id'])
+
         for row, drone in enumerate(sorted_drones):
             self.fleet_table.setItem(row, 0, QTableWidgetItem(str(drone['id'])))
             self.fleet_table.setItem(row, 1, QTableWidgetItem(drone['firmware']))
             self.fleet_table.setItem(row, 2, QTableWidgetItem(drone['mode']))
             self.fleet_table.setItem(row, 3, QTableWidgetItem("Yes" if drone['armed'] else "No"))
 
-    def update_drone_selector(self, new_state):
-        """Updates the dropdown menu for selecting a drone."""
-        self.drone_selector.clear()
-        sorted_ids = sorted(new_state.keys())
-        for drone_id in sorted_ids:
-            self.drone_selector.addItem(f"Drone {drone_id}", userData=drone_id)
-
-    def on_upload_mission(self):
-        """Opens a file dialog and calls the mission upload service."""
-        selected_drone_id = self.drone_selector.currentData()
-        if selected_drone_id is None:
-            QMessageBox.warning(self, "Selection Error", "No drone selected for mission upload.")
-            return
-
-        file_path, _ = QFileDialog.getOpenFileName(self, "Open Mission Plan", "", "Mission Plan Files (*.plan)")
-        if file_path:
-            self.call_service(self.upload_mission_client, UploadMission.Request(
-                target_system_id=selected_drone_id, file_path=file_path), "Mission Upload")
-
-    # --- Swarm Command Functions ---
-    def on_swarm_arm(self):
-        self.get_logger().info("UI sending ARM SWARM command.")
-        self.call_service(self.swarm_arm_client, Trigger.Request(), "Arm Swarm")
-
-    def on_swarm_takeoff(self):
-        self.get_logger().info("UI sending TAKEOFF SWARM command.")
-        self.call_service(self.swarm_takeoff_client, Trigger.Request(), "Takeoff Swarm")
-
-    def on_swarm_land(self):
-        self.get_logger().info("UI sending LAND SWARM command.")
-        self.call_service(self.swarm_land_client, Trigger.Request(), "Land Swarm")
-
-    def on_swarm_rtl(self):
-        self.get_logger().info("UI sending RTL SWARM command.")
-        self.call_service(self.swarm_rtl_client, Trigger.Request(), "RTL Swarm")
+    def on_start_mission(self):
+        """Calls the backend service to start the simple mission for Drone 1."""
+        self.get_logger().info("UI sending START MISSION command.")
+        self.call_service(self.start_mission_client, Trigger.Request(), "Start Mission")
 
     def call_service(self, client, request, service_name):
         """A generic helper function to call a service and handle the response."""

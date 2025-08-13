@@ -29,7 +29,8 @@ class MockIntruderNode(Node):
             self.y_pos = 0.0
             self.z_pos = 0.0
 
-        # Create the publisher for the fake odometry topic
+        # Create the publisher for the fake odometry topic.
+        # This MUST match the topic name the Swarm Coordinator is expecting.
         topic_name = f'/drone{self.drone_id}/mavros/global_position/local'
         self.publisher_ = self.create_publisher(Odometry, topic_name, 10)
         

@@ -26,13 +26,14 @@ def generate_launch_description():
         parameters=[{'drone_profiles_path': config_file_path}]
     )
 
-    # 2. The Mission Planner Backend Node
-    mission_planner_node = Node(
-        package='aether_gcs_backend',
-        executable='mission_planner',
-        name='mission_planner_backend_node',
-        output='screen'
-    )
+    # No longer needed. Single Drone MVP is just traveling in a straight line
+    # # 2. The Mission Planner Backend Node
+    # mission_planner_node = Node(
+    #     package='aether_gcs_backend',
+    #     executable='mission_planner',
+    #     name='mission_planner_backend_node',
+    #     output='screen'
+    # )
     
     # 3. The Swarm Coordinator Node
     swarm_coordinator_node = Node(
@@ -45,6 +46,5 @@ def generate_launch_description():
     # The LaunchDescription object gathers all nodes and actions to be executed.
     return LaunchDescription([
         fleet_manager_node,
-        mission_planner_node,
         swarm_coordinator_node,
     ])

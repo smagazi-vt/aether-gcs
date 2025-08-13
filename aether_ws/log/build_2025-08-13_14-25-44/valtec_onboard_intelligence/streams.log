@@ -1,0 +1,28 @@
+[0.164s] Invoking command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence -- -j20 -l20
+[0.181s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.273s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.297s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.299s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.306s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.315s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.324s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.358s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.360s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.433s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.471s] -- Found aether_interfaces: 0.0.1 (/home/valtec/aether/aether_ws/install/aether_interfaces/share/aether_interfaces/cmake)
+[0.478s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.501s] -- Found mavros_msgs: 2.10.1 (/opt/ros/humble/share/mavros_msgs/cmake)
+[0.561s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.596s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[0.596s]   ament_package_xml() package name 'valtec_onboard_intelligence' in
+[0.596s]   '/package.xml' does not match current PROJECT_NAME 'aether_gcs_logic_cpp'.
+[0.596s]   You must call project() with the same package name before.
+[0.596s] Call Stack (most recent call first):
+[0.596s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.596s]   CMakeLists.txt:36 (ament_lint_auto_find_test_dependencies)
+[0.596s] 
+[0.596s] [0m
+[0.596s] -- Configuring incomplete, errors occurred!
+[0.596s] See also "/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence/CMakeFiles/CMakeOutput.log".
+[0.600s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.603s] Invoked command in '/home/valtec/aether/aether_ws/build/valtec_onboard_intelligence' returned '2': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/valtec_onboard_intelligence:/home/valtec/aether/aether_ws/install/aether_gcs_logic_cpp:/home/valtec/aether/aether_ws/install/aether_gcs_backend:/home/valtec/aether/aether_ws/install/aether_gcs_ui:/opt/ros/humble:/home/valtec/aether/aether_ws/install/aether_interfaces VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/valtec/aether/aether_ws/build/valtec_onboard_intelligence -- -j20 -l20

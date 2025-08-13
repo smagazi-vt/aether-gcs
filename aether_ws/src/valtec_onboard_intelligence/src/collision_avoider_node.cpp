@@ -1,5 +1,5 @@
 /*
- * onboard_collision_avoider.cpp
+ * collision_avoider_node.cpp
  *
  * This node runs on each drone's companion computer. It implements the
  * Velocity Obstacles (VO) algorithm for real-time, decentralized collision avoidance.
