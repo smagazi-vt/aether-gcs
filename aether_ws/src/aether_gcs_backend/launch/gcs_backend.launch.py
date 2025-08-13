@@ -5,10 +5,9 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     """
-    This launch file starts all the necessary backend nodes for the Aether GCS.
+    This launch file starts the necessary backend nodes for the Aether GCS MVP.
     """
     
-    # Get the path to the drone_profiles.yaml configuration file
     config_file_path = os.path.join(
         get_package_share_directory('aether_gcs_backend'),
         'config',
@@ -17,7 +16,7 @@ def generate_launch_description():
 
     # --- Node Definitions ---
 
-    # 1. The Fleet Manager Node
+    # 1. The Fleet Manager Node (discovers all drones)
     fleet_manager_node = Node(
         package='aether_gcs_backend',
         executable='fleet_manager',
@@ -25,17 +24,8 @@ def generate_launch_description():
         output='screen',
         parameters=[{'drone_profiles_path': config_file_path}]
     )
-
-    # No longer needed. Single Drone MVP is just traveling in a straight line
-    # # 2. The Mission Planner Backend Node
-    # mission_planner_node = Node(
-    #     package='aether_gcs_backend',
-    #     executable='mission_planner',
-    #     name='mission_planner_backend_node',
-    #     output='screen'
-    # )
     
-    # 3. The Swarm Coordinator Node
+    # 2. The Swarm Coordinator Node (handles mission logic and collision avoidance)
     swarm_coordinator_node = Node(
         package='aether_gcs_backend',
         executable='swarm_coordinator',
@@ -43,7 +33,7 @@ def generate_launch_description():
         output='screen'
     )
 
-    # The LaunchDescription object gathers all nodes and actions to be executed.
+
     return LaunchDescription([
         fleet_manager_node,
         swarm_coordinator_node,

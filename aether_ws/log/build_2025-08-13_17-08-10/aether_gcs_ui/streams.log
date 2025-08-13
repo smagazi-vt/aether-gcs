@@ -1,0 +1,24 @@
+[1.202s] Invoking command in '/home/valtec/aether/aether_ws/src/aether_gcs_ui': PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_ui build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_ui/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_ui/install.log --single-version-externally-managed install_data
+[1.653s] running egg_info
+[1.653s] writing ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/PKG-INFO
+[1.653s] writing dependency_links to ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/dependency_links.txt
+[1.653s] writing entry points to ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/entry_points.txt
+[1.654s] writing requirements to ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/requires.txt
+[1.654s] writing top-level names to ../../build/aether_gcs_ui/aether_gcs_ui.egg-info/top_level.txt
+[1.655s] reading manifest file '../../build/aether_gcs_ui/aether_gcs_ui.egg-info/SOURCES.txt'
+[1.661s] writing manifest file '../../build/aether_gcs_ui/aether_gcs_ui.egg-info/SOURCES.txt'
+[1.662s] running build
+[1.663s] running build_py
+[1.664s] copying aether_gcs_ui/main_window_node.py -> /home/valtec/aether/aether_ws/build/aether_gcs_ui/build/lib/aether_gcs_ui
+[1.664s] running install
+[1.665s] running install_lib
+[1.674s] copying /home/valtec/aether/aether_ws/build/aether_gcs_ui/build/lib/aether_gcs_ui/main_window_node.py -> /home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages/aether_gcs_ui
+[1.676s] byte-compiling /home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages/aether_gcs_ui/main_window_node.py to main_window_node.cpython-310.pyc
+[1.677s] running install_data
+[1.677s] running install_egg_info
+[1.678s] removing '/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages/aether_gcs_ui-0.0.1-py3.10.egg-info' (and everything under it)
+[1.679s] Copying ../../build/aether_gcs_ui/aether_gcs_ui.egg-info to /home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages/aether_gcs_ui-0.0.1-py3.10.egg-info
+[1.683s] running install_scripts
+[1.736s] Installing aether_ui script to /home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/aether_gcs_ui
+[1.738s] writing list of installed files to '/home/valtec/aether/aether_ws/build/aether_gcs_ui/install.log'
+[1.811s] Invoked command in '/home/valtec/aether/aether_ws/src/aether_gcs_ui' returned '0': PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_ui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_ui/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_ui build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_ui/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_ui/install.log --single-version-externally-managed install_data

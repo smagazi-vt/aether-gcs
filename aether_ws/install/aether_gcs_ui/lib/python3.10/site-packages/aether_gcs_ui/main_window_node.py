@@ -3,7 +3,7 @@
 import sys
 import rclpy
 from rclpy.node import Node
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
                              QLabel, QTableWidget, QTableWidgetItem, QPushButton, 
                              QHeaderView, QMessageBox)
 from PyQt6.QtCore import QTimer
@@ -43,12 +43,33 @@ class GCSMainWindow(QMainWindow, Node):
         self.layout.addWidget(self.fleet_table)
 
         # --- Mission Control Section ---
-        self.start_mission_button = QPushButton("Start Mission for Drone 1")
+        self.mission_label = QLabel("Mission Control")
+        font = self.mission_label.font()
+        font.setPointSize(16)
+        self.mission_label.setFont(font)
+        self.layout.addWidget(self.mission_label)
+
+        # Create a horizontal layout for the command buttons
+        self.command_button_layout = QHBoxLayout()
+        self.start_mission_button = QPushButton("Start Mission (Drone 1)")
+        self.land_button = QPushButton("Land All")
+        self.rtl_button = QPushButton("Return to Launch All")
+        
+        self.command_button_layout.addWidget(self.start_mission_button)
+        self.command_button_layout.addWidget(self.land_button)
+        self.command_button_layout.addWidget(self.rtl_button)
+        
+        self.layout.addLayout(self.command_button_layout)
+
+        # Connect buttons to their functions
         self.start_mission_button.clicked.connect(self.on_start_mission)
-        self.layout.addWidget(self.start_mission_button)
+        self.land_button.clicked.connect(self.on_land)
+        self.rtl_button.clicked.connect(self.on_rtl)
 
         # --- ROS 2 Integration ---
         self.start_mission_client = self.create_client(Trigger, '/aether/start_mission')
+        self.land_client = self.create_client(Trigger, '/aether/swarm_land')
+        self.rtl_client = self.create_client(Trigger, '/aether/swarm_rtl')
 
         self.fleet_state_subscriber = self.create_subscription(
             FleetState,
@@ -113,6 +134,16 @@ class GCSMainWindow(QMainWindow, Node):
         """Calls the backend service to start the simple mission for Drone 1."""
         self.get_logger().info("UI sending START MISSION command.")
         self.call_service(self.start_mission_client, Trigger.Request(), "Start Mission")
+
+    def on_land(self):
+        """Calls the backend service to land all drones."""
+        self.get_logger().info("UI sending LAND command.")
+        self.call_service(self.land_client, Trigger.Request(), "Land All")
+
+    def on_rtl(self):
+        """Calls the backend service to RTL all drones."""
+        self.get_logger().info("UI sending RTL command.")
+        self.call_service(self.rtl_client, Trigger.Request(), "Return to Launch All")
 
     def call_service(self, client, request, service_name):
         """A generic helper function to call a service and handle the response."""
