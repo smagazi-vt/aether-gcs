@@ -17,7 +17,7 @@ def generate_launch_description():
     # YOU MUST VERIFY THIS on your physical hardware.
     fcu_url_arg = DeclareLaunchArgument(
         'fcu_url',
-        default_value='/dev/ttyAMA0:921600',
+        default_value='udp://:14540@127.0.0.1:14580',
         description='The connection URL for the flight controller.'
     )
 

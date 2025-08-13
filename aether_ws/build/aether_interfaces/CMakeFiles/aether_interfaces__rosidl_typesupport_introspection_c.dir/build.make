@@ -116,7 +116,7 @@ rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__
 rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/valtec/aether/aether_ws/build/aether_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
-	/home/valtec/aether/.venv/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_introspection_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/valtec/aether/aether_ws/build/aether_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/aether_interfaces/srv/detail/upload_mission__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/aether_interfaces/msg/detail/drone_state__rosidl_typesupport_introspection_c.h

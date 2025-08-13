@@ -11,7 +11,7 @@ from PyQt6.QtGui import QAction
 
 from aether_interfaces.srv import UploadMission
 from aether_interfaces.msg import FleetState, DeconflictionWarning
-from std_srvs.srv import Trigger 
+from std_srvs.srv import Trigger # IMPORT FOR SIMPLE SWARM COMMANDS
 
 class GCSMainWindow(QMainWindow, Node):
     """
@@ -19,8 +19,12 @@ class GCSMainWindow(QMainWindow, Node):
     Focuses on fleet monitoring and swarm command for the MVP.
     """
     def __init__(self):
-        # Explicitly initialize each parent class
+        # Using super() to initialize the parent classes.
+        # super().__init__(node_name='aether_gcs_ui_node')
+        # QMainWindow.__init__(self)
         super().__init__(node_name='aether_gcs_ui_node')
+        #Node.__init__(self, 'aether_gcs_ui_node')
+
 
         self.setWindowTitle("Aether GCS")
         self.setGeometry(100, 100, 800, 600)
@@ -62,6 +66,7 @@ class GCSMainWindow(QMainWindow, Node):
         self.swarm_label.setFont(font)
         self.layout.addWidget(self.swarm_label)
 
+        # Create a horizontal layout for the swarm buttons
         self.swarm_button_layout = QHBoxLayout()
         self.arm_swarm_button = QPushButton("Arm All")
         self.takeoff_swarm_button = QPushButton("Takeoff All")
@@ -73,8 +78,10 @@ class GCSMainWindow(QMainWindow, Node):
         self.swarm_button_layout.addWidget(self.land_swarm_button)
         self.swarm_button_layout.addWidget(self.rtl_swarm_button)
         
+        # Add the horizontal layout to the main vertical layout
         self.layout.addLayout(self.swarm_button_layout)
 
+        # Connect swarm buttons to their functions
         self.arm_swarm_button.clicked.connect(self.on_swarm_arm)
         self.takeoff_swarm_button.clicked.connect(self.on_swarm_takeoff)
         self.land_swarm_button.clicked.connect(self.on_swarm_land)
@@ -84,6 +91,7 @@ class GCSMainWindow(QMainWindow, Node):
         # --- ROS 2 Integration ---
         self.upload_mission_client = self.create_client(UploadMission, '/aether/upload_mission')
         
+        # --- Clients for swarm services ---
         self.swarm_arm_client = self.create_client(Trigger, '/aether/swarm_arm')
         self.swarm_takeoff_client = self.create_client(Trigger, '/aether/swarm_takeoff')
         self.swarm_land_client = self.create_client(Trigger, '/aether/swarm_land')
@@ -105,6 +113,7 @@ class GCSMainWindow(QMainWindow, Node):
         rclpy.spin_once(self, timeout_sec=0)
 
     def fleet_state_callback(self, msg):
+        """Receives the state of the entire fleet and updates the UI."""
         new_state = {}
         for drone_msg in msg.drones:
             new_state[drone_msg.system_id] = {
@@ -119,12 +128,14 @@ class GCSMainWindow(QMainWindow, Node):
         self.update_fleet_table()
     
     def deconfliction_warning_callback(self, msg):
+        """Displays a pop-up warning when a deconfliction message is received."""
         self.get_logger().warn(f"Received deconfliction warning: {msg.warning_text}")
         QMessageBox.critical(self, "Strategic Conflict Warning", 
             f"Conflict detected between Drone {msg.drone_id_1} and Drone {msg.drone_id_2}!\n\n"
             f"Details: {msg.warning_text}")
 
     def update_fleet_table(self):
+        """Redraws the fleet status table with the latest data."""
         self.fleet_table.setRowCount(len(self.fleet_state))
         sorted_drones = sorted(self.fleet_state.values(), key=lambda d: d['id'])
         for row, drone in enumerate(sorted_drones):
@@ -134,12 +145,14 @@ class GCSMainWindow(QMainWindow, Node):
             self.fleet_table.setItem(row, 3, QTableWidgetItem("Yes" if drone['armed'] else "No"))
 
     def update_drone_selector(self, new_state):
+        """Updates the dropdown menu for selecting a drone."""
         self.drone_selector.clear()
         sorted_ids = sorted(new_state.keys())
         for drone_id in sorted_ids:
             self.drone_selector.addItem(f"Drone {drone_id}", userData=drone_id)
 
     def on_upload_mission(self):
+        """Opens a file dialog and calls the mission upload service."""
         selected_drone_id = self.drone_selector.currentData()
         if selected_drone_id is None:
             QMessageBox.warning(self, "Selection Error", "No drone selected for mission upload.")
@@ -150,6 +163,7 @@ class GCSMainWindow(QMainWindow, Node):
             self.call_service(self.upload_mission_client, UploadMission.Request(
                 target_system_id=selected_drone_id, file_path=file_path), "Mission Upload")
 
+    # --- Swarm Command Functions ---
     def on_swarm_arm(self):
         self.get_logger().info("UI sending ARM SWARM command.")
         self.call_service(self.swarm_arm_client, Trigger.Request(), "Arm Swarm")
@@ -167,6 +181,7 @@ class GCSMainWindow(QMainWindow, Node):
         self.call_service(self.swarm_rtl_client, Trigger.Request(), "RTL Swarm")
 
     def call_service(self, client, request, service_name):
+        """A generic helper function to call a service and handle the response."""
         if not client.wait_for_service(timeout_sec=1.0):
             self.get_logger().error(f"{service_name} service not available.")
             QMessageBox.critical(self, "Service Error", f"The {service_name} service is not available.")
@@ -176,6 +191,7 @@ class GCSMainWindow(QMainWindow, Node):
         future.add_done_callback(lambda fut: self.service_response_callback(fut, service_name))
 
     def service_response_callback(self, future, service_name):
+        """A generic callback to show the result of a service call in a pop-up."""
         try:
             response = future.result()
             self.get_logger().info(f"{service_name} response: Success={response.success}, Message='{response.message}'")

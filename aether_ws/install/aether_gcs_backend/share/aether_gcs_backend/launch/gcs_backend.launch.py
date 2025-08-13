@@ -8,6 +8,7 @@ def generate_launch_description():
     This launch file starts all the necessary backend nodes for the Aether GCS.
     """
     
+    # Get the path to the drone_profiles.yaml configuration file
     config_file_path = os.path.join(
         get_package_share_directory('aether_gcs_backend'),
         'config',
@@ -16,6 +17,7 @@ def generate_launch_description():
 
     # --- Node Definitions ---
 
+    # 1. The Fleet Manager Node
     fleet_manager_node = Node(
         package='aether_gcs_backend',
         executable='fleet_manager',
@@ -24,6 +26,7 @@ def generate_launch_description():
         parameters=[{'drone_profiles_path': config_file_path}]
     )
 
+    # 2. The Mission Planner Backend Node
     mission_planner_node = Node(
         package='aether_gcs_backend',
         executable='mission_planner',
@@ -31,20 +34,7 @@ def generate_launch_description():
         output='screen'
     )
     
-    calibration_manager_node = Node(
-        package='aether_gcs_backend',
-        executable='calibration_manager',
-        name='calibration_manager_node',
-        output='screen'
-    )
-
-    strategic_deconfliction_node = Node(
-        package='aether_gcs_logic_cpp', # The new C++ package
-        executable='strategic_deconfliction_node',
-        name='strategic_deconfliction_node',
-        output='screen'
-    )
-
+    # 3. The Swarm Coordinator Node
     swarm_coordinator_node = Node(
         package='aether_gcs_backend',
         executable='swarm_coordinator',
@@ -52,11 +42,9 @@ def generate_launch_description():
         output='screen'
     )
 
-
+    # The LaunchDescription object gathers all nodes and actions to be executed.
     return LaunchDescription([
         fleet_manager_node,
         mission_planner_node,
-        calibration_manager_node,
-        strategic_deconfliction_node,
-        swarm_coordinator_node
+        swarm_coordinator_node,
     ])

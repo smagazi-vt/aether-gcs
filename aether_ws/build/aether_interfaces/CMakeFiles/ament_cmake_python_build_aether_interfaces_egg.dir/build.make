@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_aether_interfaces_egg.dir/compiler_d
 include CMakeFiles/ament_cmake_python_build_aether_interfaces_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_aether_interfaces_egg:
-	cd /home/valtec/aether/aether_ws/build/aether_interfaces/ament_cmake_python/aether_interfaces && /home/valtec/aether/.venv/bin/python3 setup.py egg_info
+	cd /home/valtec/aether/aether_ws/build/aether_interfaces/ament_cmake_python/aether_interfaces && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_aether_interfaces_egg: CMakeFiles/ament_cmake_python_build_aether_interfaces_egg
 ament_cmake_python_build_aether_interfaces_egg: CMakeFiles/ament_cmake_python_build_aether_interfaces_egg.dir/build.make

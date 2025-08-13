@@ -16,11 +16,14 @@ class SwarmCoordinatorNode(Node):
     Coordinates high-level commands for the entire drone fleet.
     """
     def __init__(self):
+        # --- THIS IS THE CRITICAL FIX ---
+        # The super().__init__() call MUST be the first line to initialize the Node.
         super().__init__('swarm_coordinator_node')
+        
         self.get_logger().info("--- Aether GCS Swarm Coordinator Starting ---")
 
         self.active_drones = []
-        self.clients = {}
+        self.service_clients = {}
 
         # Subscribe to the fleet state to know which drones are active
         self.fleet_state_sub = self.create_subscription(
@@ -46,11 +49,11 @@ class SwarmCoordinatorNode(Node):
     def get_client(self, drone_id, service_type, service_name_template):
         """Dynamically creates and returns a service client."""
         key = (drone_id, service_type)
-        if key not in self.clients:
+        if key not in self.service_clients:
             service_name = service_name_template.format(id=drone_id)
-            self.clients[key] = self.create_client(service_type, service_name)
+            self.service_clients[key] = self.create_client(service_type, service_name)
             self.get_logger().info(f"Created client for Drone {drone_id}: {service_name}")
-        return self.clients[key]
+        return self.service_clients[key]
 
     def swarm_arm_callback(self, request, response):
         """Arms all active drones."""

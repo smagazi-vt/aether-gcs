@@ -1,0 +1,53 @@
+[0.298s] Invoking command in '/home/valtec/aether/aether_ws/src/aether_gcs_backend': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces LD_LIBRARY_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/pkgconfig PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_backend build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_backend/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log --single-version-externally-managed install_data
+[0.419s] running egg_info
+[0.419s] creating ../../build/aether_gcs_backend/aether_gcs_backend.egg-info
+[0.419s] writing ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/PKG-INFO
+[0.420s] writing dependency_links to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/dependency_links.txt
+[0.420s] writing entry points to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/entry_points.txt
+[0.420s] writing requirements to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/requires.txt
+[0.420s] writing top-level names to ../../build/aether_gcs_backend/aether_gcs_backend.egg-info/top_level.txt
+[0.420s] writing manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+[0.421s] reading manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+[0.422s] writing manifest file '../../build/aether_gcs_backend/aether_gcs_backend.egg-info/SOURCES.txt'
+[0.422s] running build
+[0.422s] running build_py
+[0.422s] creating /home/valtec/aether/aether_ws/build/aether_gcs_backend/build
+[0.422s] creating /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib
+[0.422s] creating /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend
+[0.422s] copying aether_gcs_backend/__init__.py -> /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend
+[0.422s] copying aether_gcs_backend/mock_intruder_node.py -> /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend
+[0.423s] copying aether_gcs_backend/mission_planner_node.py -> /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend
+[0.423s] copying aether_gcs_backend/swarm_coordinator_node.py -> /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend
+[0.423s] copying aether_gcs_backend/fleet_manager_node.py -> /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend
+[0.423s] running install
+[0.423s] running install_lib
+[0.423s] creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend
+[0.423s] copying /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend/__init__.py -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend
+[0.423s] copying /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend/mock_intruder_node.py -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend
+[0.423s] copying /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend/mission_planner_node.py -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend
+[0.423s] copying /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend/swarm_coordinator_node.py -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend
+[0.424s] copying /home/valtec/aether/aether_ws/build/aether_gcs_backend/build/lib/aether_gcs_backend/fleet_manager_node.py -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend
+[0.424s] byte-compiling /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/__init__.py to __init__.cpython-310.pyc
+[0.424s] byte-compiling /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/mock_intruder_node.py to mock_intruder_node.cpython-310.pyc
+[0.424s] byte-compiling /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/mission_planner_node.py to mission_planner_node.cpython-310.pyc
+[0.425s] byte-compiling /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/swarm_coordinator_node.py to swarm_coordinator_node.cpython-310.pyc
+[0.425s] byte-compiling /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend/fleet_manager_node.py to fleet_manager_node.cpython-310.pyc
+[0.426s] running install_data
+[0.426s] creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index
+[0.426s] creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index/resource_index
+[0.426s] creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index/resource_index/packages
+[0.426s] copying resource/aether_gcs_backend -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/ament_index/resource_index/packages
+[0.426s] copying package.xml -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend
+[0.426s] creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/launch
+[0.426s] copying launch/gcs_backend.launch.py -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/launch
+[0.426s] creating /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/config
+[0.426s] copying config/drone_profiles.yaml -> /home/valtec/aether/aether_ws/install/aether_gcs_backend/share/aether_gcs_backend/config
+[0.426s] running install_egg_info
+[0.427s] Copying ../../build/aether_gcs_backend/aether_gcs_backend.egg-info to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages/aether_gcs_backend-0.0.1-py3.10.egg-info
+[0.428s] running install_scripts
+[0.441s] Installing fleet_manager script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+[0.441s] Installing mission_planner script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+[0.441s] Installing mock_intruder script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+[0.441s] Installing swarm_coordinator script to /home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/aether_gcs_backend
+[0.441s] writing list of installed files to '/home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log'
+[0.460s] Invoked command in '/home/valtec/aether/aether_ws/src/aether_gcs_backend' returned '0': CMAKE_PREFIX_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces LD_LIBRARY_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/valtec/aether/aether_ws/install/aether_interfaces/lib/pkgconfig PYTHONPATH=/home/valtec/aether/aether_ws/build/aether_gcs_backend/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/valtec/aether/aether_ws/install/aether_gcs_backend/lib/python3.10/site-packages:/home/valtec/aether/aether_ws/install/aether_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} ROS_PACKAGE_PATH=/home/valtec/aether/aether_ws/install/aether_interfaces/share /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aether_gcs_backend build --build-base /home/valtec/aether/aether_ws/build/aether_gcs_backend/build install --record /home/valtec/aether/aether_ws/build/aether_gcs_backend/install.log --single-version-externally-managed install_data

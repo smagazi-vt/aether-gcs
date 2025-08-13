@@ -1,0 +1,21 @@
+Starting >>> aether_interfaces
+Starting >>> aether_gcs_ui
+Starting >>> valtec_onboard_intelligence
+Finished <<< aether_gcs_ui [0.44s]
+--- stderr: aether_interfaces
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+
+---
+Finished <<< aether_interfaces [3.51s]
+Starting >>> aether_gcs_backend
+Starting >>> aether_gcs_logic_cpp
+Finished <<< aether_gcs_backend [0.46s]
+Finished <<< valtec_onboard_intelligence [7.00s]
+Finished <<< aether_gcs_logic_cpp [6.35s]
+
+Summary: 5 packages finished [9.99s]
+  1 package had stderr output: aether_interfaces
