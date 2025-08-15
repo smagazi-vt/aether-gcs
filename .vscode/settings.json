@@ -1,3 +1,9 @@
 {
-    "cmake.sourceDirectory": "/home/valtec/aether/aether_ws/src/valtec_onboard_intelligence"
+    "cmake.sourceDirectory": "/home/valtec/aether/aether_ws/src/valtec_onboard_intelligence",
+    "python.defaultInterpreterPath": "/home/valtec/aether/.venv/bin/python3",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/opt/ros/humble/include/**"
+    ]
+
 }

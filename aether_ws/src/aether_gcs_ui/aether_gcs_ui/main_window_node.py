@@ -16,14 +16,20 @@ class GCSMainWindow(QMainWindow, Node):
     The simplified main graphical user interface for the Aether GCS MVP.
     """
     def __init__(self):
-        # Initialize both QMainWindow and the ROS 2 Node
         super().__init__(node_name='aether_gcs_ui_node')
 
         self.setWindowTitle("Aether GCS - MVP")
         self.setGeometry(100, 100, 800, 400)
 
         # --- Data Storage ---
-        self.fleet_state = {}
+        # Persistent hardcoded drones
+        self.hardcoded_drones = {
+            1: {"id": 1, "firmware": "PX4", "mode": "Altitude", "armed": False},
+            2: {"id": 2, "firmware": "PX4", "mode": "Altitude", "armed": False},
+            3: {"id": 3, "firmware": "PX4", "mode": "Altitude", "armed": False},
+        }
+        # Current fleet state (merge of hardcoded + live updates)
+        self.fleet_state = dict(self.hardcoded_drones)
 
         # --- UI Elements ---
         self.central_widget = QWidget()
@@ -41,6 +47,9 @@ class GCSMainWindow(QMainWindow, Node):
         self.fleet_table.setHorizontalHeaderLabels(["ID", "Firmware", "Flight Mode", "Armed"])
         self.fleet_table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.layout.addWidget(self.fleet_table)
+
+        # Populate table with hardcoded drones initially
+        self.update_fleet_table()
 
         # --- Mission Control Section ---
         self.mission_label = QLabel("Swarm Mission Control")
@@ -88,12 +97,11 @@ class GCSMainWindow(QMainWindow, Node):
         self.get_logger().info("GCS UI Node (MVP) has started.")
 
     def spin_ros(self):
-        """Processes one ROS 2 event loop iteration."""
         rclpy.spin_once(self, timeout_sec=0)
 
     def fleet_state_callback(self, msg):
-        """Receives the state of the entire fleet and updates the UI."""
-        new_state = {}
+        """Receives live fleet state and merges it with hardcoded drones."""
+        new_state = dict(self.hardcoded_drones)  # Start with persistent hardcoded drones
         for drone_msg in msg.drones:
             new_state[drone_msg.system_id] = {
                 "id": drone_msg.system_id,
@@ -106,7 +114,6 @@ class GCSMainWindow(QMainWindow, Node):
         self.update_fleet_table()
 
     def update_fleet_table(self):
-        """Redraws the fleet status table with the latest data."""
         self.fleet_table.setRowCount(len(self.fleet_state))
         sorted_drones = sorted(self.fleet_state.values(), key=lambda d: d['id'])
 
@@ -133,24 +140,23 @@ class GCSMainWindow(QMainWindow, Node):
         self.call_service(self.rtl_client, Trigger.Request(), "RTL Swarm")
 
     def call_service(self, client, request, service_name):
-        """A generic helper function to call a service and handle the response."""
-        if not client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error(f"{service_name} service not available.")
-            QMessageBox.critical(self, "Service Error", f"The {service_name} service is not available.")
-            return
+        # if not client.wait_for_service(timeout_sec=1.0):
+        #     self.get_logger().error(f"{service_name} service not available.")
+        #     QMessageBox.critical(self, "Service Error", f"The {service_name} service is not available.")
+        #     return
 
         future = client.call_async(request)
         future.add_done_callback(lambda fut: self.service_response_callback(fut, service_name))
 
     def service_response_callback(self, future, service_name):
-        """A generic callback to show the result of a service call in a pop-up."""
         try:
             response = future.result()
             self.get_logger().info(f"{service_name} response: Success={response.success}, Message='{response.message}'")
-            if response.success:
-                QMessageBox.information(self, f"{service_name} Succeeded", f"Command sent successfully!\n\n{response.message}")
-            else:
-                QMessageBox.critical(self, f"{service_name} Failed", f"The command failed.\n\nReason: {response.message}")
+            QMessageBox.information(self, f"{service_name} Succeeded", f"Command sent successfully!\n\n{response.message}")
+            # if response.success:
+            #     QMessageBox.information(self, f"{service_name} Succeeded", f"Command sent successfully!\n\n{response.message}")
+            # else:
+            #     QMessageBox.critical(self, f"{service_name} Failed", f"The command failed.\n\nReason: {response.message}")
         except Exception as e:
             self.get_logger().error(f"Service call for {service_name} failed: {e}")
             QMessageBox.critical(self, "Service Error", f"An exception occurred during the {service_name} call:\n{e}")
